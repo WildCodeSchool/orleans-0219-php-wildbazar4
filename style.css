@@ -2,6 +2,10 @@
 
 /* CATEGORIE*/
 
+#categories h2{
+  text-align:center;
+}
+
 .scard{
 	max-width:380px;
 	max-height:220px;
