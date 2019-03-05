@@ -1,20 +1,27 @@
 /*Yacine*/
 .yjumbotron {
   padding: 12rem 2rem !important;
-  background-image:url('images/fond_jumbotron.jpeg');
+  background-image:url('images/Jumbotrooon.jpeg');
   background-size: cover;
-  opacity:0.9;
 }@media screen and (max-width: 991px) {
  span.ybar {
    display:none;
   }
 }
 .cat:hover{
-   border-bottom: 2px solid #555;
+   border-bottom: 2px solid #D95AA2;
+   color: #D95AA2;
+}
+.ytxtban,.ytxt{
+   color: #ffffff;
+   font-size:30px;
+   text-shadow:4px 4px #000000; 
+   font-family: 'Permanent Marker';
 }
 .navbar-collapse{
  flex-grow: 0.9 ;
 }
+
 /*Yacine*/
 
 /* CATEGORIE*/
