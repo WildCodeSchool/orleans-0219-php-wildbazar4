@@ -6,9 +6,27 @@
 /*bannière accueil*/
 .yjumbotron {
   padding: 12rem 2rem !important;
-  background-image:url('images/fond_jumbotron.jpeg');
+  background-image:url('images/test2.jpg');
   background-size: cover;
-  opacity:0.9;
+}
+.ycat:hover{
+   border-bottom: 1px solid;
+   font-weight: bold;
+}
+.navbar a{
+	color:#FFFFFF;
+}
+.navbar{
+background: rgba(0,0,0,0.8);
+}
+h1.ytxtban{
+font-size: 50px;
+}
+.ytxtban,.ytxt{
+   color: #FFFCF2;
+   font-size:30px;
+   text-shadow:2px 2px #000000; 
+   font-family: 'Raleway';
 }
 .ycat:hover{
    border-bottom: 2px solid #555;
@@ -16,6 +34,7 @@
 .navbar-collapse{
  flex-grow: 0.9 ;
 }
+
 /*Yacine*/
 
 /* CATEGORIE*/
