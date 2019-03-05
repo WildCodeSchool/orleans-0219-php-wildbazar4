@@ -89,13 +89,6 @@
 
 /*Best sales*/
 
-.E_container-fluid
-{
-    background-color:#3f261a;
-}
-
-
-/*Best sales*/
 
 .aproductname{
 width: 100%;  
@@ -106,7 +99,6 @@ border-radius: 50px;
 
 .acontainerarticle:hover >.aproductname{
     display:none;
-
 
 }
 
@@ -119,7 +111,10 @@ background-color: rgba(255, 255, 255, 0.9);
 border-radius: 50px;
 
 }
-
+.E_container-fluid
+{
+    background-color:#3f261a;
+}
 
 .E_card-columns
 {
@@ -156,13 +151,11 @@ border-radius: 50px;
  
 } 
 
-
 .E_card{
   border: none !important ;
   background-color:#3f261a !important;
   
 }
-
 
 @media screen and (max-width: 991px) {
   span.ybar {
