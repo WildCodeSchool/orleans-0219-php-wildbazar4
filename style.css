@@ -128,64 +128,46 @@ border-radius: 50px;
 
 /*footer*/
 
-.E_jumbotron 
-{
-  background-color: #3f261a !important ;
-  
-
-}
-.E_container-fluid
-{
-    background-color:#3f261a;
+.E_jumbotron {
+  background-color: #3f261a !important;
 }
 
-.E_card-columns
-{
-  background-color:#3f261a;
+.E_container-fluid {
+  background-color: #3f261a;
   color: #7d98a1;
 }
 
-.E_parts
-{
-  background-color:#3f261a;
-
+.E_card-columns {
+  background-color: #3f261a;
+  color: #7d98a1;
 }
 
-.E_logo
-{
-  background-color:#3f261a;
-  
+.E_parts {
+  background-color: #3f261a;
 }
 
-.E_categories
-{
-  background-color:#3f261a;
-  
+.E_logo {
+  background-color: #3f261a;
 }
 
-.E_adresse
-{
-  background-color:#3f261a;
-  
+.E_categories {
+  background-color: #3f261a;
 }
 
-.E_form
-{
-   background-color:#3f261a;
-  color:#7d98a1;
- 
-} 
-
-.E_card
-{
-  border: none !important ;
-  background-color:#3f261a !important;
-  color:#7d98a1;
-  padding: 30px;  
+.E_adresse {
+  background-color: #3f261a;
 }
 
-@media screen and (max-width: 991px) {
-  span.ybar,{
-    display:none;
-   }
+.E_form {
+  background-color: #3f261a;
+  box-sizing: content-box;
+  width: 100%;
+  border: 10px;
+  padding: 30px;
+}
+
+.E_card {
+  border: none !important;
+  background-color: #3f261a !important;
+  padding: 30px;
 }
