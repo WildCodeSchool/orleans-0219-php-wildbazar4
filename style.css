@@ -224,7 +224,7 @@ border-radius: 50px;
 }
 
 @media screen and (max-width: 991px) {
-  span.ybar,{
+  span.ybar{
     display:none;
    }
 }
