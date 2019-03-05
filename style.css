@@ -122,6 +122,10 @@ font-size: 50px;
 
 /*Best sales*/
 
+.acontainercartes{
+  margin: 5% 0 3%;
+  padding: 0 5%
+}
 
 .aproductname{
 width: 100%;  
@@ -142,6 +146,11 @@ border-radius: 50px;
     width: 50%;  
 background-color: rgba(255, 255, 255, 0.9);
 border-radius: 50px;
+
+}
+
+.acardimage {
+object-fit: cover;
 
 }
 .E_container-fluid
