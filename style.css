@@ -16,12 +16,14 @@ color:white !important;
 background: rgba(0,0,0,0.8);
 }
 h1.ytxtban{
-font-size: 50px;
+font-size: 100px;
+}
+p.ytxt{
+font-size:50px;
 }
 .ytxtban,.ytxt{
    color: #FFFCF2;
-   font-size:30px;
-   text-shadow:2px 2px #000000; 
+   text-shadow:0.5px 0.5px #000000; 
    font-family: 'Raleway';
 }
 .ycat:hover{
