@@ -1,15 +1,11 @@
-/*Yacine*/
+/*bannière accueil*/
 .yjumbotron {
   padding: 12rem 2rem !important;
   background-image:url('images/fond_jumbotron.jpeg');
   background-size: cover;
   opacity:0.9;
-}@media screen and (max-width: 991px) {
- span.ybar {
-   display:none;
-  }
 }
-.cat:hover{
+.ycat:hover{
    border-bottom: 2px solid #555;
 }
 .navbar-collapse{
@@ -19,9 +15,6 @@
 
 /* CATEGORIE*/
 
-#categories h2{
-  text-align:center;
-}
 
 .scard{
 	max-width:380px;
@@ -45,14 +38,14 @@
 }
 
 
-.hovereffect img {
+.hovereffect img.simg {
   display: block;
   position: relative;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
-.hovereffect:hover img {
+.hovereffect:hover img.simg {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
   filter: grayscale(1) blur(3px);
   -webkit-filter: grayscale(1) blur(3px);
@@ -89,3 +82,33 @@
   transform: scale(1);
 }
 
+
+
+.aproductname{
+width: 100%;  
+background-color: rgba(255, 255, 255, 0.9);
+border-radius: 50px;
+
+}
+
+.acontainerarticle:hover >.aproductname{
+    display:none;
+
+
+}
+
+.aprix{display: none;}
+
+.acontainerarticle:hover .aprix{
+    display:block;
+    width: 50%;  
+background-color: rgba(255, 255, 255, 0.9);
+border-radius: 50px;
+
+
+}
+@media screen and (max-width: 991px) {
+  span.ybar {
+    display:none;
+   }
+ }
