@@ -144,37 +144,55 @@ p.ytxt{
 
 /*BEST SALES*/
 
-.acontainercartes {
+
+
+/*BEST SALES*/
+
+.acontainercartes{
   margin: 5% 0 3%;
-  padding: 0 30%;
+  padding: 0;
+  
+  
 }
 
-.aproductname {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
-}
-
-.acontainerarticle:hover > .aproductname {
-  display: none;
-}
-
-.aprix {
-  display: none;
-}
-
-.acontainerarticle:hover .aprix {
-  display: block;
-  width: 50%;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
+.acontainerarticle{
+ color:none;
 }
 
 .acardimage {
-  max-width: 500px;
-  max-height: 500px;
+  max-height:300px;
   object-fit: cover;
+
+
 }
+
+.aproductname{
+width: 100%;  
+background-color: rgba(255, 255, 255, 0.9);
+border-radius: 20px;
+
+}
+
+.acartentiere{
+  padding: 0;
+  
+  
+}
+
+
+
+
+
+.aprix{
+
+width: 50%;  
+background-color: rgba(255, 255, 255, 0.9);
+border-radius: 50px;
+
+}
+
+
+
 
 /* END BEST SALES*/
 
