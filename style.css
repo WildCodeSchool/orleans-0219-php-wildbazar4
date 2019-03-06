@@ -1,38 +1,40 @@
 /*bannière accueil*/
 .yjumbotron {
-  padding: 12rem 2rem !important;
-  background-image:url('images/test2.jpg');
-  background-size: cover;
+ 	padding: 12rem 2rem !important;
+  	background-image:url('images/test2.jpg');
+  	background-size: cover;
 }
 .ycat:hover{
-   border-bottom: 1px solid;
-   font-weight: bold;
+	border-bottom: 1px solid;
+  	font-weight: bold;
 }
 nav .navbar-nav li a{
-color:white !important;
+	color:white !important;
+}
+a.navbar-brand{
+	font-size:25px;
 }
 
 .navbar{
-background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.6);
 }
 h1.ytxtban{
-font-size: 100px;
+	font-size: 100px;
 }
 p.ytxt{
-font-size:50px;
+	font-size:50px;
 }
 .ytxtban,.ytxt{
-   color: #FFFCF2;
-   text-shadow:0.5px 0.5px #000000; 
-   font-family: 'Raleway';
+        color: #FFFCF2;
+        text-shadow:0.5px 0.5px #000000; 
+        font-family: 'Raleway';
 }
 .ycat:hover{
-   border-bottom: 2px solid #555;
+        border-bottom: 2px solid #ffffff;
 }
 .navbar-collapse{
- flex-grow: 0.9 ;
+ 	flex-grow: 0.9 ;
 }
-
 /*Yacine*/
 
 /* CATEGORIE*/
