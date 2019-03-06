@@ -1,7 +1,7 @@
 
 .E_jumbotron {
   padding: rem rem !important;
-  background-image: url("images/test2.jpg");
+  background-image: url("images/peluches.jpg");
   background-size: cover;
   }
   .E_cat:hover {
@@ -63,56 +63,55 @@
   /*footer*/
   
   .E_jumbotron {
-  background-color:
-  #5E6572
+  background-color:#403d39
   !important;
   }
   
   .E_container-fluid {
   background-color:
-  #5E6572
+  #403d39
   ;
   color:
-  #1C1D21
+  #ffffff
   ;
   }
   
   .E_card-columns {
   background-color:
-  #5E6572
+  #403d39
   ;
   color:
-  #1C1D21
+  #FFFFFF
   ;
   }
   
   .E_parts {
   background-color:
-  #5E6572
+  #403d39
   ;
   }
   
   .E_logo {
   background-color:
-  #5E6572
+  #403d39
   ;
   }
   
   .E_categories {
   background-color:
-  #5E6572
+  #403d39
   ;
   }
   
   .E_adresse {
   background-color:
-  #5E6572
+  #403d39
   ;
   }
   
   .E_form {
   background-color:
-  #5E6572
+  #403d39
   ;
   box-sizing: content-box;
   width: 100%;
@@ -123,7 +122,7 @@
   .E_card {
   border: none !important;
   background-color:
-  #5E6572
+  #403d39
   !important;
   padding: 30px;
   }

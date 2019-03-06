@@ -41,10 +41,10 @@
     <!--jumbotron-->
 
     <div class="jumbotron E_jumbotron jumbotron-fluid">
-      <img src="/home/isildur/SAUVEGARDES/PROJET1/orleans-0219-php-wildbazar4/images/peluches.jpg"</img>
       <h1 class="text-center E_txtban">Peluches</h1>
-      <p class="text-center E_txt">tout un monde de douceur !
+      <p class="text-center E_txt">tout un monde de douceur !>
     </div>
+
   </header>
 
   <!--CARDS-->
@@ -55,12 +55,13 @@
     <section class="container-fluid">
       <div class="card-deck">
         <div class="card-group">
+          <div class="row justify-content-center">
 
           <!--Card 1-->
 
           <div class="card .modal-body.">
-
-            <img src="/home/isildur/SAUVEGARDES/PROJET1/orleans-0219-php-wildbazar4/images/1.jpg" class="card-img-top" alt="image peluche">
+            <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/1.jpg" class="card-img-top" alt="image peluche">
             <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit1">
               <p class="card-title E_productname text-center">Hector</p>
               <p class="card-text text-center E_prix">63.99€</p>
@@ -71,14 +72,14 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header .bg-secondary">
-                  <h3 class="modal-title" id="exampleModalCenterTitle">Hector</h3>
+                  <h3 class="modal-title" id="peluche1">Hector</h3>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
                 </div>
 
                 <div class="modal-body">
-                  <img src="/home/isildur/SAUVEGARDES/PROJET1/orleans-0219-php-wildbazar4/images/1.jpg" class="card-img-top" alt="image peluche">
+                  <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/1.jpg" class="card-img-top" alt="image peluche">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis assumenda.</p>
                 </div>
 
@@ -94,31 +95,31 @@
               </div>
             </div>
           </div>
+          </div>
 
           <!--Card 2-->
 
           <div class="card .modal-body.">
-            <div class="card">
-              <img src="/home/isildur/SAUVEGARDES/PROJET1/orleans-0219-php-wildbazar4/images/2.jpg" class="card-img-top" alt="image peluche">
-              <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit2">
-                <p class="card-title E_productname text-center">Roger</p>
-                <p class="card-text text-center E_prix">49.99€</p>
-              </div>
+              <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/2.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit2">
+              <p class="card-title E_productname text-center">Roger</p>
+              <p class="card-text text-center E_prix">49.99€</p>
             </div>
-          </div>
+          
 
           <div class="modal fade " id="produit2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header .bg-secondary">
-                  <h3 class="modal-title" id="exampleModalCenterTitle">Roger</h3>
+                  <h3 class="modal-title" id="peluche2">Roger</h3>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
                 </div>
 
                 <div class="modal-body">
-                  <img src="/home/isildur/SAUVEGARDES/PROJET1/orleans-0219-php-wildbazar4/images/2.jpg" class="card-img-top" alt="image peluche">
+                  <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/2.jpg" class="card-img-top" alt="image peluche">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis assumenda.</p>
                 </div>
                 <div class="modal-footer">
@@ -131,191 +132,423 @@
                   <button type="button" class="btn btn-light">couleur : marron - coeur "i love you" - Hauteur : 25 cm</button>
                 </div>
               </div>
+              </div>
             </div>
           </div>
+        </div>
 
           <!--Card 3-->
 
-        <div class="card">
           <div class="card .modal-body.">
-             <img src="/home/isildur/SAUVEGARDES/PROJET1/orleans-0219-php-wildbazar4/images/3.jpg" class="card-img-top" alt="image peluche">
-              <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit3">
-                <p class="card-title E_productname text-center">Julliette</p>
-                <p class="card-text text-center E_prix">35.99€</p>
-                <div class="modal fade " id="produit3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header .bg-secondary">
-                        <h3 class="modal-title" id="exampleModalCenterTitle">Juliette</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/3.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit3">
+              <p class="card-title E_productname text-center">Julliette</p>
+              <p class="card-text text-center E_prix">35.99€</p>
+              <div class="modal fade " id="produit3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header .bg-secondary">
+                      <h3 class="modal-title" id="peluche3">Juliette</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="/home/isildur/SAUVEGARDES/PROJET1/orleans-0219-php-wildbazar4/images/3.jpg" class="card-img-top" alt="image peluche">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
-                          assumenda.</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">35.99€</button>
-                        <div class="fpLeftBlockSelectorInfo">
-                          <div class="fpLeftSelector">Quantité</div>
-                          <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/3.jpg" class="card-img-top" alt="image peluche">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                        assumenda.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">35.99€</button>
+                      <div class="fpLeftBlockSelectorInfo">
+                        <div class="fpLeftSelector">Quantité</div>
+                        <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
 </select></div>
-                        </div>
-                        <button type="button" class="btn btn-light">couleur : blanc - coeur rouge - Hauteur : 18 cm</button>
                       </div>
+                      <button type="button" class="btn btn-light">couleur : blanc - coeur rouge - Hauteur : 18 cm</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          </div>
 
           <!--Card 4-->
 
-          <div class="card">
-            <img src="/home/isildur/SAUVEGARDES/PROJET1/orleans-0219-php-wildbazar4/images/4.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle">
+          <div class="card .modal-body.">
+              <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/4.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit4">
               <p class="card-title E_productname text-center">Nicolas</p>
-              <p class="card-text text-center E_prix">30.00€</p>
-              <button type="button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#produit4">par ici!</button>
+              <p class="card-text text-center E_prix">67.99€</p>
               <div class="modal fade " id="produit4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header .bg-secondary">
-                        <h3 class="modal-title" id="exampleModalCenterTitle">Juliette</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header .bg-secondary">
+                      <h3 class="modal-title" id="peluche4">Nicolas</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/4.jpg" class="card-img-top" alt="image peluche">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                        assumenda.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">67.99€</button>
+                      <div class="fpLeftBlockSelectorInfo">
+                        <div class="fpLeftSelector">Quantité</div>
+                        <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+  </select></div>
                       </div>
-                      <div class="modal-body">
-                        <img src="https://cdn.pixabay.com/photo/2010/12/13/09/57/teddy-1955_960_720.jpg" class="card-img-top" alt="image peluche">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
-                          assumenda.</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">35.99€</button>
-                        <div class="fpLeftBlockSelectorInfo">
-                          <div class="fpLeftSelector">Quantité</div>
-                          <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
-</select></div>
-                        </div>
-                        <button type="button" class="btn btn-light">couleur : blanc - coeur rouge - Hauteur : 18 cm</button>
-                      </div>
+                      <button type="button" class="btn btn-light">couleur : gris - Hauteur : 34 cm</button>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
+          </div>
     </section>
+  </section>
 
-    <!--rangée 2-->
+  <!--rangée 2-->
 
+  <section class="card product">
     <section class="container-fluid">
       <div class="card-deck rangee2">
         <div class="card-group">
+          <div class="row justify-content-center">
 
           <!--Card 5-->
 
-          <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2018/12/02/21/24/owl-3852209_960_720.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle ">
+          <div class="card .modal-body.">
+              <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/5.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit5">
               <p class="card-title E_productname text-center">Chloé</p>
-              <p class="card-text text-center E_prix">30.00€</p>
-              <button type="button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#exampleModalCenter">par ici!</button>
+              <p class="card-text text-center E_prix">29.99€</p>
+              <div class="modal fade " id="produit5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header .bg-secondary">
+                      <h3 class="modal-title" id="peluche5">Chloé</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/5.jpg" class="card-img-top" alt="image peluche">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                        assumenda.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">29.99€</button>
+                      <div class="fpLeftBlockSelectorInfo">
+                        <div class="fpLeftSelector">Quantité</div>
+                        <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+</select></div>
+                      </div>
+                      <button type="button" class="btn btn-light">couleur : gris - chapka - Hauteur : 15 cm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
           </div>
 
           <!--Card 6-->
 
-          <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2018/01/26/19/56/teddy-bear-3109644_960_720.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle">
+          <div class="card .modal-body.">
+              <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/6.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit6">
               <p class="card-title E_productname text-center">Gaston</p>
-              <p class="card-text text-center E_prix">30.00€</p>
-              <button type="button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#exampleModalCenter">par ici!</button>
+              <p class="card-text text-center E_prix">113.99€</p>
+              <div class="modal fade " id="produit6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header .bg-secondary">
+                      <h3 class="modal-title" id="peluche6">Gaston</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/6.jpg" class="card-img-top" alt="image peluche">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                        assumenda.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">113.99€</button>
+                      <div class="fpLeftBlockSelectorInfo">
+                        <div class="fpLeftSelector">Quantité</div>
+                        <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+</select></div>
+                      </div>
+                      <button type="button" class="btn btn-light">couleur : jaune et rouge - Hauteur : 57 cm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
           </div>
 
           <!--Card 7-->
 
-          <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2017/11/30/18/24/teddy-2989138_960_720.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle">
-              <p class="card-title E_productname text-center">Cécile</p>
-              <p class="card-text text-center E_prix">30.00€</p>
-              <button type="button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#exampleModalCenter">par ici!</button>
+          <div class="card .modal-body.">
+              <div class="card col-md-12 scard hovereffect">
+              <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/7.jpg" class="card-img-top" alt="image peluche">
+              <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit7">
+                <p class="card-title E_productname text-center">Cécile</p>
+                <p class="card-text text-center E_prix">45.99€</p>
+              </div>
+              <div class="modal fade " id="produit7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header .bg-secondary">
+                      <h3 class="modal-title" id="peluche7">Cécile</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/7.jpg" class="card-img-top" alt="image peluche">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                        assumenda.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">45.99€</button>
+                      <div class="fpLeftBlockSelectorInfo">
+                        <div class="fpLeftSelector">Quantité</div>
+                        <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+</select></div>
+                      </div>
+                      <button type="button" class="btn btn-light">couleur : marron - Hauteur : 23 cm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+         </div>
 
           <!--Card 8-->
 
-          <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2013/11/11/11/18/toy-208708_960_720.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle">
-              <p class="card-title E_productname text-center">Francis</p>
-              <p class="card-text text-center E_prix">30.00€</p>
-              <button type="button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#exampleModalCenter">par ici!</button>
+          <div class="card .modal-body.">
+              <div class="card col-md-12 scard hovereffect">
+              <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/8.jpg" class="card-img-top" alt="image peluche">
+              <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit8">
+                <p class="card-title E_productname text-center">Francis</p>
+                <p class="card-text text-center E_prix">33.99€</p>
+              </div>
+              <div class="modal fade " id="produit8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header .bg-secondary">
+                      <h3 class="modal-title" id="peluche8">Francis</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/8.jpg" class="card-img-top" alt="image peluche">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                        assumenda.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">33.99€</button>
+                      <div class="fpLeftBlockSelectorInfo">
+                        <div class="fpLeftSelector">Quantité</div>
+                        <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+</select></div>
+                      </div>
+                      <button type="button" class="btn btn-light">couleur : gris - Hauteur : 27 cm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
     </section>
+  </section>
 
-    <!--rangée 3-->
+  <!--rangée 3-->
 
-    <section class="container-fluid">
-      <div class="card-deck rangee3">
-        <div class="card-group">
+  <section class="container-fluid">
+    <div class="card-deck rangee3">
+      <div class="card-group">
+          <div class="row justify-content-center">
 
-          <!--Card 9-->
+        <!--Card 9-->
 
-          <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2018/04/06/19/29/teddy-bear-3296627_960_720.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle">
+        <div class="card .modal-body.">
+            <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/9.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit9">
               <p class="card-title E_productname text-center">Capucine</p>
-              <p class="card-text text-center E_prix">30.00€</p>
-              <button type="E_button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#exampleModalCenter">par ici!</button>
+              <p class="card-text text-center E_prix">23.99€</p>
+            </div>
+            <div class="modal fade " id="produit9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header .bg-secondary">
+                    <h3 class="modal-title" id="peluche9">Capucine</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/9.jpg" class="card-img-top" alt="image peluche">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                      assumenda.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">23.99€</button>
+                    <div class="fpLeftBlockSelectorInfo">
+                      <div class="fpLeftSelector">Quantité</div>
+                      <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+</select></div>
+                    </div>
+                    <button type="button" class="btn btn-light">couleur : marron - Hauteur : 12 cm</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
 
-          <!--Card 10-->
+        <!--Card 10-->
 
-          <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2016/12/28/14/32/teddy-bears-1936200_960_720.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle">
+        <div class="card .modal-body.">
+            <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/10.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit10">
               <p class="card-title E_productname text-center">Barnabé et Justine</p>
-              <p class="card-text text-center E_prix">55.00€</p>
-              <button type="button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#exampleModalCenter">par ici!</button>
+              <p class="card-text text-center E_prix">57.99€</p>
+            </div>
+            <div class="modal fade " id="produit10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header .bg-secondary">
+                    <h3 class="modal-title" id="peluche10">Barnabé et Justine</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/10.jpg" class="card-img-top" alt="image peluche">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                      assumenda.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">57.99€</button>
+                    <div class="fpLeftBlockSelectorInfo">
+                      <div class="fpLeftSelector">Quantité</div>
+                      <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+</select></div>
+                    </div>
+                    <button type="button" class="btn btn-light">couleur : marron et beige - Hauteur : 12 cm et 10 cm</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          </div>
 
-          <!--Card 11-->
+        <!--Card 11-->
 
-          <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2018/08/04/14/42/teddy-3583774_960_720.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle">
+        <div class="card .modal-body.">
+            <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/11.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit11">
               <p class="card-title E_productname text-center">Prosper</p>
-              <p class="card-text text-center E_prix">30.00€</p>
-              <button type="button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#exampleModalCenter">par ici!</button>
+              <p class="card-text text-center E_prix">55.99€</p>
+            </div>
+            <div class="modal fade " id="produit11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header .bg-secondary">
+                    <h3 class="modal-title" id="peluche11">Prosper</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/11.jpg" class="card-img-top" alt="image peluche">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                      assumenda.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">55.99€</button>
+                    <div class="fpLeftBlockSelectorInfo">
+                      <div class="fpLeftSelector">Quantité</div>
+                      <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+</select></div>
+                    </div>
+                    <button type="button" class="btn btn-light">couleur : marron foncé - Hauteur : 28 cm</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          </div>
 
-          <!--Card 12-->
+        <!--Card 12-->
 
-          <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2014/08/26/19/14/elephant-428287_960_720.jpg" class="card-img-top" alt="image peluche">
-            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle">
+        <div class="card .modal-body.">
+            <div class="card col-md-12 scard hovereffect">
+            <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/12.jpg" class="card-img-top" alt="image peluche">
+            <div class="card-img-overlay d-flex align-items-end justify-content-center E_containerarticle" data-toggle="modal" data-target="#produit12">
               <p class="card-title E_productname text-center">Eléanore</p>
-              <p class="card-text text-center E_prix">30.00€</p>
-              <button type="button" class="btn btn-grey bg-secondary" data-toggle="modal" data-target="#exampleModalCenter">par ici!</button>
+              <p class="card-text text-center E_prix">45.99€</p>
+            </div>
+            <div class="modal fade " id="produit12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header .bg-secondary">
+                    <h3 class="modal-title" id="peluche12">Eléanore</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/12.jpg" class="card-img-top" alt="image peluche">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis
+                      assumenda.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">45.99€</button>
+                    <div class="fpLeftBlockSelectorInfo">
+                      <div class="fpLeftSelector">Quantité</div>
+                      <div class="fpLeftBlockSelect"><select name="ProductFormData.ProductPostedForm.QuantitySelected"><option>1</option><option>2</option><option>3</option>
+</select></div>
+                    </div>
+                    <button type="button" class="btn btn-light">couleur : gris - Hauteur : 18 cm</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
   </section>
 
   <!--FOOTER-->
@@ -341,11 +574,10 @@
 
           <div class="E_card col-sm-2">
             <div class="E_parts">
-              <p class="card-text">Home</p>
-              <p class="card-text">About us</p>
-              <p class="card-text">Top selling</p>
-              <p class="card-text">Contact</p>
-              <p class="card-text">Legal mentions</p>
+              <p class="card-text">Stylos</p>
+              <p class="card-text">Peluches</p>
+              <p class="card-text">Mugs</p>
+              <p class="card-text">Chaussettes</p>
             </div>
           </div>
 
