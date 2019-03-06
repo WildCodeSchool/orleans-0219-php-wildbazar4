@@ -124,8 +124,20 @@ font-size: 50px;
 
 .acontainercartes{
   margin: 5% 0 3%;
-  padding: 0 30%;
+  padding: 0;
   
+  
+}
+
+.acontainerarticle{
+ color:none;
+}
+
+.acardimage {
+  max-height:300px;
+  object-fit: cover;
+
+
 }
 
 .aproductname{
@@ -135,27 +147,25 @@ border-radius: 20px;
 
 }
 
-.acontainerarticle:hover >.aproductname{
-    display:none;
-
+.acartentiere{
+  padding: 0;
+  
+  
 }
 
-.aprix{display: none;}
 
-.acontainerarticle:hover .aprix{
-    display:block;
-    width: 50%;  
+
+
+
+.aprix{
+
+width: 50%;  
 background-color: rgba(255, 255, 255, 0.9);
 border-radius: 50px;
 
 }
 
-.acardimage {
-  max-width:500px;
-	max-height:500px;
-	object-fit:cover;
 
-}
 
 
 /* END BEST SALES*/
