@@ -1,7 +1,7 @@
 /*style de base*/
 h2 {
   font-family: Raleway;
-  font-size: 35px;
+  font-size: 36px;
   text-align: center;
   text-transform: uppercase;
   font-weight:lighter;
@@ -61,11 +61,11 @@ p.ytxt{
 /* CATEGORIE*/
 
 .scard{
-  max-width:380px;
-  max-height:220px;
+  max-width:400px;
+  max-height:250px;
   object-fit:cover;
-  margin-left:15px;
-  margin-right:15px;
+  margin-left:25px;
+  margin-right:25px;
   margin-top:5px;
   margin-bottom:15px;
   padding:0px;
@@ -115,7 +115,7 @@ p.ytxt{
 
 /* ABOUT US*/
 
-#about-us img
+.about-us img
 {
   max-height: 300px;
   max-width: 300px;
@@ -124,7 +124,7 @@ p.ytxt{
   border-radius:20px;
 }
 
-#about-us
+.div-about
 {
   background-color: #403d39;
   color:#FFFFFF;
@@ -168,7 +168,7 @@ border-radius: 20px;
 .aprix{
 width: 50%;  
 background-color: rgba(255, 255, 255, 0.9);
-order-radius: 50px;
+border-radius: 50px;
 
 }
 
