@@ -157,19 +157,6 @@ transform: scale(0.7)
 
 }
 
-.acartentiere{
-   width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  
-  
-}
-
-
-
-
-
 .aprix{
 background-color: rgba(0, 0, 0, 0.6);
 color: #fff;
@@ -233,4 +220,19 @@ border-radius: 20px;
     display:none;
    }
  }
+
+ @media screen and (max-width: 1200px) {
+   .acardimage {
+     max-height: 200px;
+     object-fit: scale-down;}
+
+     .acartentiere:hover > img{
+
+      max-width: 1000px;
+      max-height: 1000px;
+      transform: none;
+      transition: 0s 100s;
+   }
+}
+
 
