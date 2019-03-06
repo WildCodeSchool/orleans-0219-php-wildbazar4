@@ -4,8 +4,9 @@ h2 {
   font-size: 36px;
   text-align: center;
   text-transform: uppercase;
-  font-weight:lighter;
-  padding-bottom: 80px;
+  font-weight: lighter;
+  padding-bottom: 55px;
+  padding-top: 70px;
 }
 
 body {
@@ -14,65 +15,65 @@ body {
 }
 
 section {
-  padding-top:100px;
-  padding-bottom:100px;
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
 
 /*bannière accueil*/
 .yjumbotron {
- 	padding: 11rem 2rem;
-  background-image:url('images/test2.jpg');
+  padding: 11rem 2rem;
+  background-image: url("images/test2.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
 }
-.ycat:hover{
-	border-bottom: 1px solid;
+.ycat:hover {
+  border-bottom: 1px solid;
   font-weight: bold;
 }
-nav .navbar-nav li a{
-	color:white !important;
+nav .navbar-nav li a {
+  color: white !important;
 }
-a.navbar-brand{
-	font-size:25px;
+a.navbar-brand {
+  font-size: 25px;
 }
 
-.navbar{
-	background: rgba(0,0,0,0.6);
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
 }
-h1.ytxtban{
-	font-size: 100px;
+h1.ytxtban {
+  font-size: 100px;
 }
-p.ytxt{
-	font-size:50px;
+p.ytxt {
+  font-size: 50px;
 }
-.ytxtban,.ytxt{
-        color: #FFFCF2;
-        text-shadow:0.5px 0.5px #000000; 
-        font-family: 'Raleway';
+.ytxtban,
+.ytxt {
+  color: #fffcf2;
+  text-shadow: 0.5px 0.5px #000000;
+  font-family: "Raleway";
 }
-.ycat:hover{
-        border-bottom: 2px solid #ffffff;
+.ycat:hover {
+  border-bottom: 2px solid #ffffff;
 }
-.navbar-collapse{
- 	flex-grow: 0.9 ;
+.navbar-collapse {
+  flex-grow: 0.9;
 }
 
 /* CATEGORIE*/
 
-.scard{
-  max-width:400px;
-  max-height:250px;
-  object-fit:cover;
-  margin-left:25px;
-  margin-right:25px;
-  margin-top:5px;
-  margin-bottom:15px;
-  padding:0px;
+.scard {
+  max-width: 400px;
+  max-height: 250px;
+  object-fit: cover;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 0px;
 }
 
-.hovereffect
-{
+.hovereffect {
   width: 100%;
   height: 100%;
   float: left;
@@ -81,19 +82,16 @@ p.ytxt{
 }
 
 .hovereffect img.simg {
-
   position: relative;
   transition: all 0.3s ease-in;
 }
 
-.hovereffect:hover img.simg 
-{
+.hovereffect:hover img.simg {
   filter: grayscale(1) blur(3px);
   transform: scale(1.2);
 }
 
 .hovereffect p.info {
-
   text-decoration: none;
   text-align: center;
   font-size: 24px;
@@ -107,7 +105,6 @@ p.ytxt{
   text-transform: uppercase;
 }
 
-
 .hovereffect:hover p.info {
   opacity: 0;
   transform: scale(1);
@@ -115,65 +112,46 @@ p.ytxt{
 
 /* ABOUT US*/
 
-.about-us img
-{
+.about-us img {
   max-height: 300px;
   max-width: 300px;
-  object-fit: cover; 
-  padding:3px;
-  border-radius:20px;
+  object-fit: cover;
+  padding: 3px;
+  border-radius: 20px;
 }
 
-.div-about
-{
+.div-about {
   background-color: #403d39;
-  color:#FFFFFF;
+  color: #ffffff;
 }
-
 
 /*BEST SALES*/
 
-.acontainercartes{
-  margin: 5% 0 3%;
-  padding: 0;
-  
-  
-}
-
-.acontainerarticle{
- color:none;
-}
-
 .acardimage {
-  max-height:300px;
+  max-height: 300px;
   object-fit: cover;
-
-
+  text-transform: uppercase;
 }
 
-.aproductname{
-width: 100%;  
-background-color: rgba(255, 255, 255, 0.9);
-border-radius: 20px;
-
+.acartentiere:hover > img {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in;
 }
 
-.acartentiere{
-  padding: 0;
-  
-  
+.aproductname {
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transform: scale(0.7);
 }
 
-
-.aprix{
-width: 50%;  
-background-color: rgba(255, 255, 255, 0.9);
-border-radius: 50px;
-
+.aprix {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 20px;
 }
-
-
-
 
 /* END BEST SALES*/
 
@@ -221,4 +199,18 @@ border-radius: 50px;
   border: none !important;
   background-color: #5e6572 !important;
   padding: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .acardimage {
+    max-height: 200px;
+    object-fit: scale-down;
+  }
+
+  .acartentiere:hover > img {
+    max-width: 1000px;
+    max-height: 1000px;
+    transform: none;
+    transition: 0s 100s;
+  }
 }
