@@ -21,7 +21,7 @@ section {
 
 /*bannière accueil*/
 .yjumbotron {
- 	padding: 12rem 2rem !important;
+ 	padding: 12rem 2rem;
   	background-image:url('images/test2.jpg');
   	background-size: cover;
 }
@@ -219,7 +219,7 @@ p.ytxt{
 }
 
 .E_card {
-  border: none !important;
-  background-color: #5e6572 !important;
+  border: none;
+  background-color: #5e6572;
   padding: 30px;
 }
