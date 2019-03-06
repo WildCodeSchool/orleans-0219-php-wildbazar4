@@ -20,62 +20,41 @@ section {
 }
 
 /*bannière accueil*/
-
 .yjumbotron {
-  padding: 12rem 2rem !important;
-  background-image: url("images/test2.jpg");
-  background-size: cover;
-  margin-bottom: 0px;
+ 	padding: 12rem 2rem !important;
+  	background-image:url('images/test2.jpg');
+  	background-size: cover;
 }
-<<<<<<< HEAD
 .ycat:hover{
-   border-bottom: 1px solid;
-   font-weight: bold;a
+	border-bottom: 1px solid;
+  	font-weight: bold;
 }
 nav .navbar-nav li a{
-color:white !important;
+	color:white !important;
+}
+a.navbar-brand{
+	font-size:25px;
 }
 
 .navbar{
-background: rgba(0,0,0,0.8);
-=======
-
-.ycat:hover {
-  border-bottom: 1px solid;
-  font-weight: bold;
+	background: rgba(0,0,0,0.6);
 }
-
-.navbar a {
-  color: #ffffff;
+h1.ytxtban{
+	font-size: 100px;
 }
-
-nav .navbar-nav li a {
-  color: white !important;
->>>>>>> 68a52c8a2268e2a5975ccbe8c968732f520ae670
+p.ytxt{
+	font-size:50px;
 }
-
-.navbar {
-  background: rgba(0, 0, 0, 0.8);
+.ytxtban,.ytxt{
+        color: #FFFCF2;
+        text-shadow:0.5px 0.5px #000000; 
+        font-family: 'Raleway';
 }
-
-h1.ytxtban {
-  font-size: 50px;
+.ycat:hover{
+        border-bottom: 2px solid #ffffff;
 }
-
-.ytxtban,
-.ytxt {
-  color: #fffcf2;
-  font-size: 30px;
-  text-shadow: 2px 2px #000000;
-  font-family: "Raleway";
-}
-
-.ycat:hover {
-  border-bottom: 2px solid #555;
-}
-
-.navbar-collapse {
-  flex-grow: 0.9;
+.navbar-collapse{
+ 	flex-grow: 0.9 ;
 }
 
 /* CATEGORIE*/
