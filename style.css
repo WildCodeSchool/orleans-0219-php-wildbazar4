@@ -164,71 +164,69 @@ p.ytxt{
 
 /* END BEST SALES*/
 
+/*footer*/
+  
+.E_jumbotron {
+  background-color:#403d39
+  !important;
+  }
+  
+  .E_container-fluid {
+  background-color:
+  #403d39
+  ;
+  color:
+  #BEDBDB;
+  font-family: "https://www.1001freefonts.com/fr/black-melody.font";
+  ;
+  }
+  
+  .E_card-columns {
+  background-color:
+  #403d39
+  ;
+  color:
+  #FFFFFF
+  ;
+  }
+  
+  .E_parts {
 
-  /*footer*/
+  background-color:
+  #403d39
+  ;
+  }
   
-  .E_jumbotron {
-    background-color:#403d39
-    !important;
-    }
-    
-    .E_container-fluid {
-    background-color:
-    #403d39
-    ;
-    color:
-    #BEDBDB;
-    font-family: "https://www.1001freefonts.com/fr/black-melody.font";
-    ;
-    }
-    
-    .E_card-columns {
-    background-color:
-    #403d39
-    ;
-    color:
-    #FFFFFF
-    ;
-    }
-    
-    .E_parts {
+  .E_logo {
+  background-color:
+  #403d39
+  ;
+  }
   
-    background-color:
-    #403d39
-    ;
-    }
-    
-    .E_logo {
-    background-color:
-    #403d39
-    ;
-    }
-    
-    .E_categories {
-    background-color:
-    #403d39
-    ;
-    }
-    
-    .E_adresse {
-    background-color:
-    #403d39
-    ;
-    }
-    
-    .E_form {
-    background-color:
-    #403d39
-    ;
-    box-sizing: content-box;
-    width: 100%;
-    border: 10px;
-    padding: 30px;
-    }
-    
-    .E_card {
-      text-align:center;
-      align-items:center;
-    padding: 30px;
-    }
-    
+  .E_categories {
+  background-color:
+  #403d39
+  ;
+  }
+  
+  .E_adresse {
+  background-color:
+  #403d39
+  ;
+  }
+  
+  .E_form {
+  background-color:
+  #403d39
+  ;
+  box-sizing: content-box;
+  width: 100%;
+  border: 10px;
+  padding: 30px;
+  }
+  
+  .E_card {
+    text-align:center;
+    align-items:center;
+  padding: 30px;
+}
