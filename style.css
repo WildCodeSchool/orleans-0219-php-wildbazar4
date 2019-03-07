@@ -1,21 +1,23 @@
 /*style de base*/
 h2 {
   font-family: Raleway;
-  font-size: 35px;
+  font-size: 38px;
   text-align: center;
   text-transform: uppercase;
-  font-weight:lighter;
-  padding-bottom: 80px;
+  font-weight: lighter;
+  padding-bottom:4vw;
+  color: #383838;
 }
 
 body {
   font-family: Source Sans Pro;
   font-size: 16pt;
+  color: #383838;
 }
 
-section {
-  padding-top:100px;
-  padding-bottom:100px;
+section{
+  padding-top:6vw;
+  padding-bottom:6vw;
 }
 
 /*bannière accueil*/
@@ -38,7 +40,7 @@ a.navbar-brand{
 }
 
 .navbar{
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.9);
 }
 h1.ytxtban{
 	font-size: 100px;
@@ -58,21 +60,23 @@ p.ytxt{
  	flex-grow: 0.9 ;
 }
 
-/* CATEGORIE*/
 
-.scard{
-  max-width:380px;
-  max-height:220px;
-  object-fit:cover;
-  margin-left:15px;
-  margin-right:15px;
-  margin-top:5px;
-  margin-bottom:15px;
-  padding:0px;
+/* CATEGORIE*/
+.div-bg{
+  background-color: #F5F5F5;
+}
+.scard {
+  max-width: 400px;
+  max-height: 250px;
+  object-fit: cover;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 0px;
 }
 
-.hovereffect
-{
+.hovereffect {
   width: 100%;
   height: 100%;
   float: left;
@@ -81,19 +85,16 @@ p.ytxt{
 }
 
 .hovereffect img.simg {
-
   position: relative;
   transition: all 0.3s ease-in;
 }
 
-.hovereffect:hover img.simg 
-{
+.hovereffect:hover img.simg {
   filter: grayscale(1) blur(3px);
   transform: scale(1.2);
 }
 
 .hovereffect p.info {
-
   text-decoration: none;
   text-align: center;
   font-size: 24px;
@@ -107,73 +108,59 @@ p.ytxt{
   text-transform: uppercase;
 }
 
-
 .hovereffect:hover p.info {
   opacity: 0;
   transform: scale(1);
 }
 
 /* ABOUT US*/
-
-#about-us img
-{
+.about-us h2{
+  color :#FFFFFF;
+}
+.about-us img {
   max-height: 300px;
   max-width: 300px;
-  object-fit: cover; 
-  padding:3px;
-  border-radius:20px;
+  object-fit: cover;
+  padding: 3px;
+  border-radius: 20px;
 }
 
-#about-us
-{
-  background-color: #403d39;
-  color:#FFFFFF;
+.div-about {
+  background-image:url('images/bg-about-us.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
 }
-
 
 /*BEST SALES*/
-
-.acontainercartes{
-  margin: 5% 0 3%;
-  padding: 0;
-  
-  
+.p-best{
+  padding-bottom: 1vw;
 }
-
-.acontainerarticle{
- color:none;
-}
-
 .acardimage {
-  max-height:300px;
+  max-height: 300px;
   object-fit: cover;
-
-
+  text-transform: uppercase;
 }
 
-.aproductname{
-width: 100%;  
-background-color: rgba(255, 255, 255, 0.9);
-border-radius: 20px;
-
+.acartentiere:hover > img {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in;
 }
 
-.acartentiere{
-  padding: 0;
-  
-  
+.aproductname {
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transform: scale(0.7);
 }
 
-
-.aprix{
-width: 50%;  
-background-color: rgba(255, 255, 255, 0.9);
-order-radius: 50px;
-
+.aprix {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 20px;
 }
-
-
-
 
 /* END BEST SALES*/
 
@@ -221,4 +208,18 @@ order-radius: 50px;
   border: none;
   background-color: #5e6572;
   padding: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .acardimage {
+    max-height: 200px;
+    object-fit: scale-down;
+  }
+
+  .acartentiere:hover > img {
+    max-width: 1000px;
+    max-height: 1000px;
+    transform: none;
+    transition: 0s 100s;
+  }
 }
