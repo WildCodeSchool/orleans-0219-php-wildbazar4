@@ -1,22 +1,23 @@
 /*style de base*/
 h2 {
   font-family: Raleway;
-  font-size: 36px;
+  font-size: 38px;
   text-align: center;
   text-transform: uppercase;
   font-weight: lighter;
-  padding-bottom: 55px;
-  padding-top: 70px;
+  padding-bottom:4vw;
+  color: #383838;
 }
 
 body {
   font-family: Source Sans Pro;
   font-size: 16pt;
+  color: #383838;
 }
 
-section {
-  padding-top: 100px;
-  padding-bottom: 120px;
+section{
+  padding-top:6vw;
+  padding-bottom:6vw;
 }
 
 /*bannière accueil*/
@@ -32,14 +33,14 @@ section {
   font-weight: bold;
 }
 nav .navbar-nav li a{
-	color:white;
+	color:white !important;
 }
 a.navbar-brand{
 	font-size:25px;
 }
 
 .navbar{
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.9);
 }
 h1.ytxtban{
 	font-size: 100px;
@@ -61,7 +62,9 @@ p.ytxt{
 
 
 /* CATEGORIE*/
-
+.div-bg{
+  background-color: #F5F5F5;
+}
 .scard {
   max-width: 400px;
   max-height: 250px;
@@ -111,7 +114,9 @@ p.ytxt{
 }
 
 /* ABOUT US*/
-
+.about-us h2{
+  color :#FFFFFF;
+}
 .about-us img {
   max-height: 300px;
   max-width: 300px;
@@ -121,11 +126,16 @@ p.ytxt{
 }
 
 .div-about {
-  background-color: #403d39;
+  background-image:url('images/bg-about-us.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   color: #ffffff;
 }
 
 /*BEST SALES*/
+.p-best{
+  padding-bottom: 1vw;
+}
 .acardimage {
   max-height: 300px;
   object-fit: cover;
