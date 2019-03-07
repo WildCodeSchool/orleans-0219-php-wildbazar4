@@ -3,7 +3,6 @@ h2 {
   font-family: Raleway;
   font-size: 40px;
   text-align: center;
-  text-transform: uppercase;
   font-weight: lighter;
   padding-bottom:4vw;
   color: #b5985a;
@@ -38,10 +37,10 @@ footer{
 }
 .ycat:hover{
 	border-bottom: 1px solid;
-  color:#b5985a !important;
+  color:#b5985a !important; /*Important nécessaire pour surcharger bootstrap. c'était ça ou un id*/
 }
 nav .navbar-nav li a{
-	color:white !important;
+	color:white !important;/*Important nécessaire pour surcharger bootstrap. c'était ça ou un id*/
 }
 a.navbar-brand{
 	font-size:25px;
@@ -111,7 +110,7 @@ p.ytxt{
   transition: all 0.4s ease-in;
   opacity: 1;
   color: #fff;
-  text-transform: uppercase;
+  
 }
 
 .hovereffect:hover p.info {
@@ -145,7 +144,7 @@ p.ytxt{
 .acardimage {
   max-height: 400px;
   object-fit: cover;
-  text-transform: uppercase;
+  
 }
 
 .acartentiere:hover > img {
@@ -158,7 +157,7 @@ p.ytxt{
   padding-top:3px;
   padding-bottom:3px;
   color: #fff;
-  text-transform: uppercase;
+  
   font-family: Raleway;
   font-weight: lighter;
 }
@@ -174,7 +173,6 @@ p.ytxt{
   transition: all 0.4s ease-in;
   opacity: 1;
   color: #b5985a;
-  text-transform: uppercase;
   font-family: Raleway;
 
 }
@@ -208,4 +206,24 @@ p.ytxt{
   .E_card li{
   padding-top:1px;
   padding-bottom:1px;
+  }
+
+  @media screen and (max-width: 991px) {
+span.ybar{
+display:none;
 }
+} 
+
+@media screen and (max-width: 1200px) {
+.acardimage {
+max-height: 200px;
+object-fit: scale-down;
+}
+
+.acartentiere:hover > img {
+max-width: 1000px;
+max-height: 1000px;
+transform: none;
+transition: 0s 100s;
+}
+} 
