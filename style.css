@@ -22,43 +22,43 @@ section {
 /*bannière accueil*/
 .yjumbotron {
   padding: 11rem 2rem;
-  background-image: url("images/test2.jpg");
+  background-image:url('images/test2.jpg');
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
 }
-.ycat:hover {
-  border-bottom: 1px solid;
+.ycat:hover{
+	border-bottom: 1px solid;
   font-weight: bold;
 }
-nav .navbar-nav li a {
-  color: white !important;
+nav .navbar-nav li a{
+	color:white;
 }
-a.navbar-brand {
-  font-size: 25px;
+a.navbar-brand{
+	font-size:25px;
 }
 
-.navbar {
-  background: rgba(0, 0, 0, 0.6);
+.navbar{
+	background: rgba(0,0,0,0.6);
 }
-h1.ytxtban {
-  font-size: 100px;
+h1.ytxtban{
+	font-size: 100px;
 }
-p.ytxt {
-  font-size: 50px;
+p.ytxt{
+	font-size:50px;
 }
-.ytxtban,
-.ytxt {
-  color: #fffcf2;
-  text-shadow: 0.5px 0.5px #000000;
-  font-family: "Raleway";
+.ytxtban,.ytxt{
+        color: #FFFCF2;
+        text-shadow:0.5px 0.5px #000000; 
+        font-family: 'Raleway';
 }
-.ycat:hover {
-  border-bottom: 2px solid #ffffff;
+.ycat:hover{
+        border-bottom: 2px solid #ffffff;
 }
-.navbar-collapse {
-  flex-grow: 0.9;
+.navbar-collapse{
+ 	flex-grow: 0.9 ;
 }
+
 
 /* CATEGORIE*/
 
