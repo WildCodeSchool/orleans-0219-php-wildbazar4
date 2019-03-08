@@ -1,0 +1,241 @@
+/*style de base*/
+h2 {
+    font-family: Raleway;
+    font-size: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:lighter;
+    padding-bottom: 30px;
+    padding-top:30px;
+  }
+  
+  body {
+    font-family: Source Sans Pro ;
+    font-size: 20px;  
+  }
+  
+  section {
+    padding-top:10px;
+    padding-bottom:40px;
+  }
+  
+  /*bannière accueil*/
+  
+  .yjumbotron 
+  {
+    padding: 12rem 2rem !important;
+    background-image:url('images/socks.jpg');
+    background-size: cover;
+    margin-bottom: 0px;
+  }
+  
+  .ycat:hover
+  {
+     border-bottom: 1px solid;
+     font-weight: bold;
+  }
+  
+  .navbar a
+  {
+      color:#FFFFFF;
+  }
+  
+  nav .navbar-nav li a{
+     color: white !important;
+  }
+  
+  .navbar{
+     background: rgba(0,0,0,0.8);
+  }
+  
+  h1.ytxtban
+  {
+     font-size: 100px;
+  }
+  .ytxtban,.ytxt
+  {
+     color: #FFFCF2;
+     font-size:50px;
+     text-shadow:0.5px 0.5px #000000; 
+     font-family: 'Raleway';
+  }
+  
+  .ycat:hover
+  {
+     border-bottom: 2px solid #555;
+  }
+  
+  .navbar-collapse
+  {
+     flex-grow: 0.9 ;
+  }
+  
+  
+  
+  
+  
+  
+  /* ------------------- CATEGORIE --------------------- */
+  
+  .card img{
+      max-width:250px;
+      max-height:250px;
+      object-fit:cover;
+  }
+  /*
+  .card-text{
+      font-size: 3vw;
+      hyphens: none;
+  }
+  
+  .card{
+      max-width:250px;
+      /*margin-left:15px;
+      margin-right:15px;
+      margin-top:5px;
+      margin-bottom:25px;
+      padding:0px;*/
+      text-align:center;
+      font-family: Raleway;
+      cursor:pointer;
+  }
+  
+  .card-img-overlay{
+    transform: scale(0.6);
+    transition: all 0.4s ease-in;
+    height:0%;
+  }
+  /*
+  .price{
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.8);	
+    padding: 6px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+      text-transform: uppercase;
+    text-decoration: bold;
+  }
+    
+  .card:hover .card-img-overlay{
+    opacity: 0;
+  }
+  
+  
+  /* -------------------- MODAL  -------------------- */
+  
+  
+  .modal-title{
+      font-family: Raleway;
+      font-weight: lighter;
+      text-transform: capitalize;
+  }
+  
+  .modal-price{
+      font-family: Raleway;
+      font-weight: bold;	
+      text-align: center;
+  }
+  .modal-footer{
+      justify-content:center;
+  }
+  
+  .modal-content{
+      padding:1em; 
+      font-size: 18px;
+  }
+  .modal-price{
+    padding:1em; 
+    font-size: 34px;
+  }
+  
+  .img-modal{
+      max-width:300px;
+      max-height:300px;
+      object-fit: cover;
+  }
+  .modal{
+    padding:1em;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* -------------------- FOOTER -------------------- */
+  
+  .E_jumbotron {
+  background-color:
+  #3F261A
+  !important;
+  }
+  
+  .E_container-fluid {
+    background-color: #403d39;
+  color:
+  #7D98A1
+  ;
+  }
+  
+  .E_card-columns {
+    background-color: #403d39;
+  color:
+  #7D98A1
+  ;
+  }
+  
+  .E_parts {
+    background-color: #403d39;
+  }
+  
+  .E_logo {
+    background-color: #403d39;
+  }
+  
+  .E_categories {
+    background-color: #403d39;
+  }
+  
+  .E_adresse {
+    background-color: #403d39;
+  }
+  
+  .E_form {
+    background-color: #403d39;
+  box-sizing: content-box;
+  width: 100%;
+  border: 10px;
+  padding: 30px;
+  }
+  
+  .E_card {
+  border: none !important;
+    background-color: #403d39 !important;
+  padding: 30px;
+  }
+  
+  @media screen and (max-width: 991px) {
+    span.ybar{
+      display:none;
+     }
+  }
+
+    @media screen and (max-width: 1069px) {
+     .card-text{
+      font-size: 4vw;
+  }
+  }
