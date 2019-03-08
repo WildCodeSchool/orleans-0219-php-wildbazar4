@@ -5,7 +5,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: lighter;
-  padding-bottom:4vw;
+  padding-bottom: 4vw;
   color: #b5985a;
 }
 
@@ -15,12 +15,12 @@ body {
   color: #383838;
 }
 
-footer{
+footer {
   font-family: Raleway;
-  font-size:12pt; 
+  font-size: 12pt;
   background-color: #2c211b;
-  color: #FFFCF2;
-  padding-top:2vw;
+  color: #fffcf2;
+  padding-top: 2vw;
 }
 /*bannière accueil*/
 .yjumbotron {
@@ -39,7 +39,7 @@ a.navbar-brand {
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(44, 33, 27, 0.9);
 }
 h1.ytxtban {
   font-size: 100px;
@@ -53,41 +53,35 @@ p.ytxt {
   text-shadow: 0.5px 0.5px #000000;
   font-family: "Raleway";
 }
-.ycat:hover{
-	border-bottom: 1px solid;
-  color:#b5985a !important;
+.ycat:hover {
+  border-bottom: 1px solid;
+  color: #b5985a !important;
 }
 .navbar-collapse {
   flex-grow: 0.9;
 }
 
-
-
-
-
-
-
-
-
 /*CARTES*/
+
+.acontainercartes {
+  margin: 4vw 0;
+}
 
 .acardimage {
   max-height: 300px;
   object-fit: cover;
-	cursor:pointer;
+  cursor: pointer;
 }
-.card-body{
-	cursor:pointer;
+.card-body {
+  cursor: pointer;
 }
 
 .acartentiere:hover > img {
   transform: scale(1.2);
   transition: all 0.4s ease-in;
 }
-.acontainercartes .card-body{
-
-  background-color: #F5F5F5;	
-
+.acontainercartes .card-body {
+  background-color: #f5f5f5;
 }
 .aproductname {
   font-size: 20px;
@@ -102,10 +96,8 @@ p.ytxt {
 
 .acartentiere {
   width: 100%;
-  border: solid 1px  #b5985a;
-  
+  border: solid 1px #b5985a;
 }
-
 
 /* END BEST SALES*
 
@@ -124,30 +116,30 @@ p.ytxt {
 
 
 /*footer*/
-  
-  .E_form {
+
+.E_form {
   box-sizing: content-box;
   width: 100%;
   border: 10px;
   padding: 30px;
-  }
-  
-  .E_card {
-  text-align:center;
-  align-items:center;
+}
+
+.E_card {
+  text-align: center;
+  align-items: center;
   padding: 30px;
 }
-  .E_card a{
-  color: #FFFCF2;
+.E_card a {
+  color: #fffcf2;
 }
-  .E_card ul{
+.E_card ul {
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-  .E_card li{
-  padding-top:1px;
-  padding-bottom:1px;
+.E_card li {
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -164,7 +156,7 @@ p.ytxt {
   }
 }
 @media screen and (max-width: 991px) {
-span.ybar{
-display:none;
+  span.ybar {
+    display: none;
+  }
 }
-} 
