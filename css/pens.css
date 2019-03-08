@@ -1,66 +1,66 @@
+
 h2 {
   font-family: Raleway;
   font-size: 40px;
   text-align: center;
+  text-transform: uppercase;
   font-weight: lighter;
-  padding-bottom:4vw;
+  padding-bottom: 4vw;
   color: #b5985a;
 }
 
 body {
   font-family: Source Sans Pro;
   font-size: 16pt;
+  color: #383838;
 }
 
-section{
-  padding-top:6vw;
-  padding-bottom:6vw;
-}
-
-footer{
+footer {
   font-family: Raleway;
-  font-size:12pt; 
+  font-size: 12pt;
   background-color: #2c211b;
-  color: #FFFCF2;
-  padding-top:2vw;
+  color: #fffcf2;
+  padding-top: 2vw;
 }
 /*bannière accueil*/
 .yjumbotron {
   padding: 11rem 2rem;
-  background-image:url('../images/bg_4.jpg');
+  background-image: url("../images/bg_4.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
 }
-.ycat:hover{
-  border-bottom: 1px solid;
-  color:#b5985a !important; /*Important nécessaire pour surcharger bootstrap. c'était ça ou un id*/
-}
-nav .navbar-nav li a{
-  color:white !important;/*Important nécessaire pour surcharger bootstrap. c'était ça ou un id*/
-}
-a.navbar-brand{
-  font-size:25px;
+nav .navbar-nav li a {
+  color: white !important;
 }
 
-.navbar{
-  background: rgba(44,33,27,0.9);
+a.navbar-brand {
+  font-size: 25px;
 }
-h1.ytxtban{
+
+.navbar {
+  background: rgba(44, 33, 27, 0.9);
+}
+h1.ytxtban {
   font-size: 100px;
 }
-p.ytxt{
-  font-size:50px;
+p.ytxt {
+  font-size: 50px;
 }
-.ytxtban,.ytxt{
-  color: #FFFCF2;
-  text-shadow:0.5px 0.5px #000000; 
-  font-family: 'Raleway';
+.ytxtban,
+.ytxt {
+  color: #fffcf2;
+  text-shadow: 0.5px 0.5px #000000;
+  font-family: "Raleway";
+}
+.ycat:hover {
+  border-bottom: 1px solid;
+  color: #b5985a !important;
+}
+.navbar-collapse {
+  flex-grow: 0.9;
 }
 
-.navbar-collapse{
-  flex-grow: 0.9 ;
-}
 
 .card{
   margin: 20px;
