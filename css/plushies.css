@@ -4,7 +4,7 @@
 
 .yjumbotron {
   padding: 11rem 2rem;
-  background-image: url("/home/isildur/PROJETS/PROJET1/orleans-0219-php-wildbazar4/images/plush0.jpg");
+  background-image: url("../images/plush0.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
@@ -84,7 +84,6 @@ p.ytxt {
   .E_container-fluid {
     background-color:#2C211B;
     color:#2f343d;
-    font-family: "https://www.1001freefonts.com/fr/black-melody.font"; 
     }
     
   .E_card-columns {
