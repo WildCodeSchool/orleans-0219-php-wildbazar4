@@ -1,0 +1,143 @@
+
+
+/*HEADER*/
+
+.yjumbotron {
+  padding: 11rem 2rem;
+  background-image: url("../images/plush0.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+nav .navbar-nav li a {
+  color: white !important;
+}
+
+a.navbar-brand {
+  font-size: 25px;
+}
+
+.navbar {
+  background: rgba(44,33,27,0.9);
+}
+h1.ytxtban {
+  font-size: 100px;
+}
+p.ytxt {
+  font-size: 50px;
+}
+.ytxtban,
+.ytxt {
+  color: #fffcf2;
+  text-shadow: 0.5px 0.5px #000000;
+  font-family: "Raleway";
+}
+.ycat:hover{
+	border-bottom: 1px solid;
+  color:#b5985a !important;
+}
+.navbar-collapse {
+  flex-grow: 0.9;
+}
+
+/*CARTES*/
+
+.acardimage {
+  max-height: 300px;
+  object-fit: cover;
+  text-transform: uppercase;
+  z-index: 19;
+	cursor:pointer;
+}
+.card-body{
+	cursor:pointer;
+}
+
+.acartentiere:hover > img {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in;
+}
+.acontainercartes .card-body{
+
+  background-color: #F5F5F5;	
+
+}
+.aproductname {
+  font-size: 20px;
+  color: #2e4347;
+}
+
+.aprix {
+  color: #b5985a;
+  font-family: raleway;
+  font-size: 25px;
+}
+
+.acartentiere {
+  width: 100%;
+  border: solid 1px  #b5985a;
+  
+}
+
+/*footer*/
+  
+  .E_container-fluid {
+    background-color:#2C211B;
+    color:#2f343d;
+    }
+    
+  .E_card-columns {
+  background-color:#2C211B;
+  color:#b5985a;
+  }
+
+  .row{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .E_parts {
+
+  background-color: #2C211B;
+  font-family: "Raleway";
+  }
+  
+  .E_categories {background-color:#2C211B;
+  font-family: "Raleway";
+  color:  #b5985a;
+  }
+  
+  .E_adresse {background-color:#2C211B;
+  font-family: "Raleway";
+  }
+  
+  .E_form-groupe {background-color:#2C211B;
+  box-sizing: content-box;
+  width: 100%;
+  border: 10px;
+  padding: 70px;
+  font-family: "Raleway";
+  color: #b5985a !important;
+  }
+  
+  .E_card {text-align:center;
+  align-items:center;
+  padding: 50px;
+  color: #b5985a;
+}
+a{
+    color: #f5f5f5;
+}
+label{
+    color: #f5f5f5;
+}
+
+@media screen and (max-width: 1200px) {
+  .E_cardimage {
+    max-height: 200px;
+    object-fit: scale-down;
+  }
+  @media screen and (max-width: 991px) {
+    span.ybar{
+    display:none;
+    }
