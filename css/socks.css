@@ -17,7 +17,7 @@ h4{
 
 body {
   font-family: Source Sans Pro;
-  font-size: 15pt;
+  font-size: 16pt;
   color: #383838;
 }
 
@@ -37,48 +37,41 @@ section{
 /*bannière accueil*/
 .yjumbotron {
   padding: 11rem 2rem;
-  background-image: url("../images/socks/socks-banner.jpg");
+  background-image:url('../images/socks/socks-banner.jpg');
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
 }
-
-nav .navbar-nav li a {
-  color: white !important;
-}
-
-a.navbar-brand {
-  font-size: 25px;
-}
-
-.navbar {
-  background: rgba(44, 33, 27, 0.9);
-}
-
-h1.ytxtban {
-  font-size: 100px;
-}
-
-p.ytxt {
-  font-size: 50px;
-}
-
-.ytxtban,
-.ytxt {
-  color: #fffcf2;
-  text-shadow: 0.5px 0.5px #000000;
-  font-family: "Raleway";
-}
-
 .ycat:hover{
   border-bottom: 1px solid;
-  color:#b5985a !important;
+  color:#b5985a !important; /*Important nécessaire pour surcharger bootstrap. c'était ça ou un id*/
+}
+nav .navbar-nav li a{
+  color:white !important;/*Important nécessaire pour surcharger bootstrap. c'était ça ou un id*/
+}
+a.navbar-brand{
+  font-size:25px;
 }
 
-.navbar-collapse {
-  flex-grow: 0.9;
+.navbar{
+  background: rgba(44,33,27,0.9);
 }
 
+h1.ytxtban{
+  font-size: 100px;
+}
+p.ytxt{
+  font-size:50px;
+}
+.ytxtban,.ytxt{
+  color: #FFFCF2;
+  text-shadow:0.5px 0.5px #000000; 
+  font-family: 'Raleway';
+}
+
+.navbar-collapse{
+  flex-grow: 0.9 ;
+}
 
 /* ------------------- CATEGORIE --------------------- */
 
