@@ -107,51 +107,34 @@ p.ytxt{
 
 /*footer*/
   
-  .E_container-fluid {
-    background-color:#2C211B;
-    color:#2f343d;
-    font-family: "https://www.1001freefonts.com/fr/black-melody.font"; 
-    }
-    
-  .E_card-columns {
-  background-color:#2C211B;
-  color:#b5985a;
-  }
-
-  .row{
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  
-  .E_parts {
-
-  background-color: #2C211B;
-  font-family: "Raleway";
-  }
-  
-  .E_categories {background-color:#2C211B;
-  font-family: "Raleway";
-  color:  #b5985a;
-  }
-  
-  .E_adresse {background-color:#2C211B;
-  font-family: "Raleway";
-  }
-  
-  .E_form-groupe {background-color:#2C211B;
+.E_form {
   box-sizing: content-box;
   width: 100%;
   border: 10px;
-  padding: 70px;
-  font-family: "Raleway";
-  color: #b5985a !important;
+  padding: 30px;
   }
   
-  .E_card {text-align:center;
+  .E_card {
+  text-align:center;
   align-items:center;
-  padding: 50px;
-  color: #b5985a;
+  padding: 30px;
 }
+  .E_card a{
+  color: #FFFCF2;
+}
+  .E_card ul{
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+  .E_card li{
+  padding-top:1px;
+  padding-bottom:1px;
+  }
+  p.card-text{
+    color: #b5985a;
+  }
+
 a{
     color: #f5f5f5;
 }
