@@ -30,8 +30,8 @@ footer{
 }
 
 section{
-  padding-top:3vw;
-  padding-bottom:3vw;
+  padding-top:3.5vw;
+  padding-bottom:3.5vw;
 }
 
 /*bannière accueil*/
@@ -52,7 +52,7 @@ a.navbar-brand {
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(44, 33, 27, 0.9);
 }
 
 h1.ytxtban {
@@ -119,7 +119,7 @@ p.ytxt {
 .fullcard {
   width: 100%;
   border: solid 1px  #b5985a;
-  
+  margin:20px;
 }
 
 
