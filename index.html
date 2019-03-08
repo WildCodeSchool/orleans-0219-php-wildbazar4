@@ -1,18 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-  <link href="https://fonts.googleapis.com/css?family=Merienda+One|Permanent+Marker|Roboto|Source+Sans+Pro|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+ <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CPermanent+Marker%7CRoboto%7CSource+Sans+Pro%7CRaleway" rel="stylesheet"> 
   <title>Wild Bazar</title>
 </head>
 
 <body>
   <!-- header -->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"> Wild Bazar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -20,17 +24,16 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#"><span class="ycat">Stylo</span> &emsp;
-              <span class="ybar">|</span><span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="pens.html"><span class="ycat">Stylo</span><span class="ybar ml-3">|</span><span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><span class="ycat">Peluches</span> &emsp;<span class="ybar">|</span></a>
+            <a class="nav-link" href="plushies.html"><span class="ycat">Peluches</span><span class="ybar ml-3">|</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><span class="ycat">Mug</span> &emsp;<span class="ybar">|</span></a>
+            <a class="nav-link" href="mugs.html"><span class="ycat">Mug</span><span class="ybar ml-3">|</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><span class="ycat">Chaussettes</span></a>
+            <a class="nav-link " href="socks.html" tabindex="-1" aria-disabled="true"><span class="ycat">Chaussettes</span></a>
           </li>
         </ul>
       </div>
@@ -40,166 +43,177 @@
       <p class="text-center ytxt">On y trouve de tout et surtout du<br> n'importe quoi !
     </div>
   </header>
-
   <!-- categories -->
-  <div class="container-fluid">
+
+  <div class="container-fluid div-bg ">
     <section class="categories">
-      <h2>Catégories</h2>
+      <h2>- Catégories -</h2>
       <div class="row justify-content-center">
-        <div class="card col-sm-3 scard hovereffect">
-          <img src="images/pens2.jpg" class="card-img-top simg" alt="Stylos">
-          <div class="card-img-overlay">
-            <a href="https://www.w3schools.com/html/" class="card-title info">Stylos</a>
+        <a href="pens.html">
+          <div class="card col-sm-3 scard hovereffect">
+            <img src="images/pens2.jpg" class="card-img-top simg" alt="Stylos">
+            <div class="card-img-overlay">
+              <p class="card-title info">Stylos</p>
+            </div>
           </div>
-        </div>
-        <div class="card col-sm-3 scard hovereffect">
-          <img src="images/plush.jpg" class="card-img-top simg" alt="Peluches">
-          <div class="card-img-overlay">
-            <a href="https://www.w3schools.com/html/" class="card-title info">Peluches</a>
+        </a>
+        <a href="plushies.html">
+          <div class="card col-sm-3 scard hovereffect">
+            <img src="images/plush.jpg" class="card-img-top simg" alt="Peluches">
+            <div class="card-img-overlay">
+              <p class="card-title info">Peluches</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="row justify-content-center">
-        <div class="card col-sm-3 scard hovereffect">
-          <img src="images/cup.jpg" class="card-img-top simg" alt="Mugs">
-          <div class="card-img-overlay">
-            <a href="https://www.w3schools.com/html/" class="card-title info">Mugs</a>
+        <a href="mugs.html">
+          <div class="card col-sm-3 scard hovereffect">
+            <img src="images/cup.jpg" class="card-img-top simg" alt="Mugs">
+            <div class="card-img-overlay">
+              <p class="card-title info">Mugs</p>
+            </div>
           </div>
-        </div>
-        <div class="card col-sm-3 scard hovereffect">
-          <img src="images/socks.jpg" class="card-img-top simg" alt="Chaussettes">
-          <div class="card-img-overlay">
-            <a href="https://www.w3schools.com/html/" class="card-title info">Chaussettes</a>
+        </a>
+        <a href="socks.html">
+          <div class="card col-sm-3 scard hovereffect">
+            <img src="images/socks.jpg" class="card-img-top simg" alt="Chaussettes">
+            <div class="card-img-overlay">
+              <p class="card-title info">Chaussettes</p>
+            </div>
           </div>
-        </div>
+        </a>
+      </div>
+    </section>
+  </div>
+  <!-- about-us -->
+  <div class="container-fluid div-about ">
+    <section class="about-us about-anchor">
+      <div class="row justify-content-center">
+        <h2>- Notre équipe -</h2>
+      </div>
+      <div class="row">
+        <img class="col-sm-3 offset-1" src="images/about-us.jpg" alt="About us">
+        <p class="col-sm-7 offset-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis assumenda.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis assumenda.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis assumenda.</p>
       </div>
     </section>
   </div>
 
   <!--CARDS-->
-  <section class="container-fluid">
-    <h2>Meilleures ventes</h2>
 
-    <p class="text-center">A saisir avant épuisement des stocks!</p>
+  <section class=" div-bg acontainercartes m-t-0 m-b-2" id="bestselling-anchor">
+    <h2>- Meilleures ventes -</h2>
 
-    <div class="card-deck">
-      <!--Card 1-->
-      <div class="card">
-        <img src="https://via.placeholder.com/150" class="card-img" alt="...">
-        <div class="card-img-overlay d-flex align-items-end justify-content-center acontainerarticle">
-          <p class="card-title aproductname text-center">Slip de bain</p>
-          <p class="card-text text-center aprix">parapluie</p>
+    <p class="text-center p-best">A saisir avant épuisement des stocks!</p>
 
+    <div class="container-fluid">
+      <div class="row justify-content-center m-b-5">
+        <!--Card 1-->
+        <div class="card col-sm-10 col-md-6 col-lg-6 col-xl-2 m-3 acartentiere">
+          <img src="https://d357bpt78riloh.cloudfront.net/monoeuvre3-fr/assets/img/showcase/photo-sur-mug-magique-7434ce7920.png" class="card-img acardimage m-3 p-5" alt="...">
+          <div class="card-img-overlay d-flex flex-column-reverse justify-content-between acontainerarticle p-0">
+            <p class="card-title aproductname m-0 text-center">arc-en-ciel</p>
+            <p class="card-text justify-content-center text-center aprix p-2">100 €</p>
+
+          </div>
         </div>
-      </div>
 
-      <!--Card 2-->
-      <div class="card">
-        <img src="https://via.placeholder.com/150" class="card-img" alt="...">
-        <div class="card-img-overlay d-flex align-items-end justify-content-center acontainerarticle">
-          <p class="card-title aproductname text-center">arc-en-ciel</p>
-          <p class="card-text text-center aprix">nuage.</p>
+        <!--Card 2-->
+        <div class="card col-sm-10 col-md-6 col-lg-6 col-xl-2 m-3 acartentiere">
+          <img src="https://d357bpt78riloh.cloudfront.net/monoeuvre3-fr/assets/img/showcase/photo-sur-mug-magique-7434ce7920.png" class="card-img acardimage m-3 p-5" alt="...">
+          <div class="card-img-overlay d-flex flex-column-reverse justify-content-between acontainerarticle p-0">
+            <p class="card-title aproductname m-0 text-center">arc-en-ciel</p>
+            <p class="card-text justify-content-center text-center aprix p-2">100 €</p>
 
+          </div>
         </div>
-      </div>
 
-      <!--Card 3-->
-      <div class="card">
-        <img src="https://via.placeholder.com/150" class="card-img" alt="...">
-        <div class="card-img-overlay d-flex align-items-end justify-content-center acontainerarticle">
-          <p class="card-title aproductname text-center">soleil</p>
-          <p class="card-text text-center aprix">lune</p>
+        <!--Card 3-->
+        <div class="card col-sm-10 col-md-6 col-lg-6 col-xl-2 m-3 acartentiere">
+          <img src="https://d357bpt78riloh.cloudfront.net/monoeuvre3-fr/assets/img/showcase/photo-sur-mug-magique-7434ce7920.png" class="card-img acardimage m-3 p-5" alt="...">
+          <div class="card-img-overlay d-flex flex-column-reverse justify-content-between acontainerarticle p-0">
+            <p class="card-title aproductname m-0 text-center">arc-en-ciel</p>
+            <p class="card-text justify-content-center text-center aprix p-2">100 €</p>
 
+          </div>
         </div>
       </div>
     </div>
-    <!--end cards-->
-
   </section>
 
+  <!--END CARDS-->
   <!--FOOTER-->
- <footer>
 
-  <div class="E_jumbotron jumbotron-fluid">
-    <div class="E_container-fluid">
-      <div class="card-columns">
+  <footer id="footer-anchor">
 
+    <div class="E_jumbotron jumbotron-fluid container-fluid">
+      <div class="E_container-fluid container-fluid">
         <!--parts-->
-
-        <div class="E_card">
-          <div class="E_parts">
-            <p class="card-text">Home</p>
-            <p class="card-text">About us</p>
-            <p class="card-text">Top selling</p>
-            <p class="card-text">Contact</p>
-            <p class="card-text">Legal mentions</p>
+        <div class="row">
+          <div class="E_card col-sm-2">
+            <ul class="E_parts">
+              <li class="card-text"><a href="#">Accueil</a></li>
+              <li class="card-text"><a href="#">A propos de nous</a></li>
+              <li class="card-text"><a href="#">Meilleurs ventes</a></li>
+              <li class="card-text"><a href="#">Nous contacter</a></li>
+              <li class="card-text"><a href="#">Mentions légales</a></li>
+            </ul>
           </div>
-        </div>
 
-        <!--logo-->
+            <!--categories-->
 
-        <div class="E_card">
-          <div class="E_logo">
-            <img src="https://i.goopics.net/P2PPb.png" class="card-img-top" alt="logo wild">
-            <div class="card-body"></div>
+          <div class="E_card col-sm-2">
+            <ul class="E_parts justify-content-around">
+              <li class="card-text"><a href="#">Stylos</a></li>
+              <li class="card-text"><a href="#">Peluches</a></li>
+              <li class="card-text"><a href="#">Mugs</a></li>
+              <li class="card-text"><a href="#">Chaussettes</a></li>
+            </ul>
           </div>
-        </div>
 
-        <!--category-->
+            <!--adresse-->
 
-        <div class="E_card border-color-transparent">
-          <div class="E_categories">
-            <p class="card-text">Stylos</p>
-            <p class="card-text">Peluches</p>
-            <p class="card-text">Mugs</p>
-            <p class="card-text">Chaussettes</p>
-            <p class="card-text"> .</p>
-          </div>
-        </div>
-
-        <!--adresse-->
-
-        <div class="E_card">
-          <div class="d-flex justify-content-center">
-            <div class="E_adresse ">
-              <h2 class="card-title">Wild Bazar</h2>
-              <p class="card-text text-center">1, rue de la Paix</p>
-              <p class="card-text text-center">75000 Paris</p>
-              <p class="card-text text-center">01.23.45.67.89</p>
+          <div class="E_card col-sm-2">
+            <div class="E_adresse justify-content-around">
+              <h2 class="card-title">WILD BAZAR</h2>
+              <p class="card-text">1, rue de la Paix</p>
+              <p class="card-text">75000 Paris</p>
+              <p class="card-text">01.23.45.67.89</p>
             </div>
           </div>
-        </div>
 
-        <!--form-->
-
-        <div class="d-flex justify-content-end">
-          <div class="E_form">
+          <div class="E_form col-sm-4 offset-1">
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="footer">E-mail</label>
+                <input type="email" class="form-control" id="footer" placeholder="name@example.com">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <label for="exampleFormControlTextarea1">Commentaires</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-light justify">Sign in</button>
+              <div class="col-sm-4 offset-5">
+                <button type="submit" class="btn btn-light align-items-center justify-content-center">Envoyer</button>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- Optional JavaScript -->
+
+  <script src="custombox.min.js"></script>
+  <script src="custombox.legacy.min.js"></script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
