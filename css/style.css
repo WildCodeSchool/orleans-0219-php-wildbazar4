@@ -146,6 +146,9 @@ p.ytxt{
   object-fit: cover;
   
 }
+.acartentiere .card {
+  cursor:pointer;
+}
 
 .acartentiere:hover > img {
   transform: scale(1.2);
