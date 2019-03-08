@@ -69,6 +69,9 @@ p.ytxt {
 body{
   background-color: #efe1b499;
 }
+.ypad{
+  margin:4vw 0;
+}
 /*Modal*/
 .modal-header{
   background-color: ;
