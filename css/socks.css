@@ -37,7 +37,7 @@ section{
 /*bannière accueil*/
 .yjumbotron {
   padding: 11rem 2rem;
-  background-image: url("../images/socks.jpg");
+  background-image: url("../images/socks/socks-banner.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
