@@ -1,0 +1,172 @@
+h2 {
+  font-family: Raleway;
+  font-size: 40px;
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom:4vw;
+  color: #b5985a;
+}
+
+body {
+  font-family: Source Sans Pro;
+  font-size: 16pt;
+}
+
+section{
+  padding-top:6vw;
+  padding-bottom:6vw;
+}
+
+footer{
+  font-family: Raleway;
+  font-size:12pt; 
+  background-color: #2c211b;
+  color: #FFFCF2;
+  padding-top:2vw;
+}
+/*bannière accueil*/
+.yjumbotron {
+  padding: 11rem 2rem;
+  background-image:url('../images/bg_41.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+.ycat:hover{
+  border-bottom: 1px solid;
+  color:#b5985a !important; /*Important nécessaire pour surcharger bootstrap. c'était ça ou un id*/
+}
+nav .navbar-nav li a{
+  color:white !important;/*Important nécessaire pour surcharger bootstrap. c'était ça ou un id*/
+}
+a.navbar-brand{
+  font-size:25px;
+}
+
+.navbar{
+  background: rgba(44,33,27,0.9);
+}
+h1.ytxtban{
+  font-size: 100px;
+}
+p.ytxt{
+  font-size:50px;
+}
+.ytxtban,.ytxt{
+  color: #FFFCF2;
+  text-shadow:0.5px 0.5px #000000; 
+  font-family: 'Raleway';
+}
+
+.navbar-collapse{
+  flex-grow: 0.9 ;
+}
+
+.card{
+  margin: 20px;
+  width: 25%;
+}
+body{
+  background-color: #efe1b499;
+}
+/*Modal*/
+.modal-header{
+  background-color: ;
+  border-bottom: 1px solid #000000;
+}
+.modal-footer{
+border-top: 1px solid #000000;
+}
+.modal_prix{
+  font-size: 30px;
+  color: #b5985a;
+  font-family: raleway;
+  font-weight: bold;
+  font-size: 25px;
+}
+span.ydore{
+  color: ;
+  font-family: raleway;
+}
+
+/*CARTES*/
+
+.acardimage {
+  max-height: ;
+  object-fit: cover;
+  cursor:pointer;
+}
+.card-body{
+  cursor:pointer;
+}
+
+.acartentiere:hover > img {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in;
+}
+.acontainercartes .card-body{
+
+  background-color: #F5F5F5;  
+
+}
+.card{
+  border-radius: 20px;
+  background-color: ;
+}
+.aproductname {
+  font-size: 20px;
+  color: #2e4347;
+}
+
+.aprix {
+  color: #b5985a;
+  font-family: raleway;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.card-body{
+  background-color: rgba(44,33,27,0.9);
+}
+
+
+.acartentiere {
+  width: 100%;
+  border: solid 1px  #b5985a;
+  
+}
+
+/*FOOTER*/
+ .E_form {
+  box-sizing: content-box;
+  width: 100%;
+  border: 10px;
+  padding: 30px;
+  }
+  
+  .E_card {
+  text-align:center;
+  align-items:center;
+  padding: 30px;
+}
+  .E_card a{
+  color: #FFFCF2;
+}
+  .E_card ul{
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+  .E_card li{
+  padding-top:1px;
+  padding-bottom:1px;
+  }
+  p.card-text{
+    color: #b5985a;
+  }
+
+  @media screen and (max-width: 991px) {
+span.ybar{
+display:none;
+}
+} 
