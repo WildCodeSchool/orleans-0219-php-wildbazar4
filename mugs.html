@@ -17,28 +17,28 @@
 <body>
   <!-- header -->
   <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"> Wild Bazar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"> Wild Bazar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="pens.html"><span class="ycat">Stylo</span><span class="ybar ml-3">|</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="plushies.html"><span class="ycat">Peluches</span><span class="ybar ml-3">|</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><span class="ycat">Mug</span><span class="ybar ml-3">|</span><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="socks.html" tabindex="-1" aria-disabled="true"><span class="ycat">Chaussettes</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="pens.html"><span class="ycat">Stylo</span><span class="ybar ml-3">|</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plushies.html"><span class="ycat">Peluches</span><span class="ybar ml-3">|</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="ycat">Mug</span><span class="ybar ml-3">|</span><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="socks.html" tabindex="-1" aria-disabled="true"><span class="ycat">Chaussettes</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="jumbotron yjumbotron jumbotron-fluid">
       <h1 class="text-center ytxtban">Mugs</h1>
       <p class="text-center ytxt">Trouvez le mug de vos rêves!</p>
@@ -70,10 +70,11 @@
             <span aria-hidden="true">&times;</span>
           </button>
             </div>
+
             <div class="modal-body">
               <div class="row">
                 <div class="col-6">
-                  <img src="images/a01.jpg" class="card-img-top" alt="fountain_pen1">
+                  <img src="images/a01.jpg" class="card-img-top" alt="Genghis Khan's mug">
                 </div>
                 <div class="col-6">
                   <div class="row justify-content-center">
@@ -84,47 +85,47 @@
                     <p>Description : La vraie tasse de Genghis Khan. Le vrai Genghis. Il buvait tout les soirs du lait chaud avant d'aller faire son gros dodo. </p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <li>Gamme: haute</li>
-                      <li>Taille : moyenne</li>
-                      <li>Utilisable pour la boisson : lait</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Couleur
-                </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
-                      </div>
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: haute</li>
+                        <li>Taille : moyenne</li>
+                        <li>Utilisable pour la boisson : lait</li>
+                      </ul>
                     </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Quantité
-                </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
+                    <div class="col-6">
 
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Couleur
+                    </button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
+                      </div>
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Quantité
+                    </button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -154,59 +155,60 @@
             <div class="modal-body">
               <div class="row">
                 <div class="col-6">
-                  <img src="images/a02.jpg" class="card-img-top" alt="fountain_pen1">
+                  <img src="images/a02.jpg" class="card-img-top" alt="Mug with photos">
                 </div>
                 <div class="col-6">
                   <div class="row justify-content-center">
-                    <p class="aprix">1,00€</p>
+                    <p class="aprix">1€</p>
                   </div>
 
                   <div class="row mt-5">
                     <p>Description : Vos meilleurs souvenirs ont un prix: un euro. </p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <li>Gamme: basique</li>
-                      <li>Taille : petite</li>
-                      <li>Utilisable pour la boisson : thé</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Couleur
-                </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: basique</li>
+                        <li>Taille : petite</li>
+                        <li>Utilisable pour la boisson : thé</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Couleur
+                    </button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
+                      </div>
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Quantité
+                    </button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Quantité
-                </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
-                      </div>
-                    </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -254,56 +256,53 @@
                     <p>Description : Tasse à offrir pour souligner de manière subtile sa propre intelligence. </p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: moyenne</li>
-                      <!--1-->
-                      <li>Taille : grande</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : café</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: standard</li>
+                        <li>Taille : grande</li>
+                        <li>Utilisable pour la boisson : café</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
       </div>
-
       <!--Card 4-->
 
       <!--1-->
@@ -346,51 +345,49 @@
                     <p>Description : Tasse fabriquée avec amour pour l'élu de votre anse... heu... coeur. </p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: haute</li>
-                      <!--1-->
-                      <li>Taille : moyenne</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : thé</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: haute</li>
+                        <li>Taille : moyenne</li>
+                        <li>Utilisable pour la boisson : thé</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -438,51 +435,49 @@
                     <p>Description : Prenez rendez-vous avec un artiste! </p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: haute</li>
-                      <!--1-->
-                      <li>Taille : grande</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : café</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: luxe</li>
+                        <li>Taille : grande</li>
+                        <li>Utilisable pour la boisson : café</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -529,56 +524,53 @@
                     <p>Description : Faites entrer la magie de Noël en toute saison! </p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: moyenne</li>
-                      <!--1-->
-                      <li>Taille : medium</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : lait</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: standard</li>
+                        <li>Taille : moyenne</li>
+                        <li>Utilisable pour la boisson : lait</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
       </div>
-
       <!--Card 7-->
       <!--1-->
       <div data-toggle="modal" data-target="#modal7" class="card acartentiere col-12 col-sm-6 col-md-3 ml-md-3 ml-sm-2 mr-sm-2 col-lg-2 m-2 p-0">
@@ -620,51 +612,49 @@
                     <p>Description : In-dis-pen-sable. Différenciez-vous avec ce mug unique! </p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: basique</li>
-                      <!--1-->
-                      <li>Taille : grande</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : thé</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: basique</li>
+                        <li>Taille : grande</li>
+                        <li>Utilisable pour la boisson : thé</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -711,51 +701,49 @@
                     <p>Description : Impossible de se lever du pied gauche avec ce mug un peu magique!</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: haute</li>
-                      <!--1-->
-                      <li>Taille : petite</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : café</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: luxe</li>
+                        <li>Taille : petite</li>
+                        <li>Utilisable pour la boisson : café</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -802,56 +790,53 @@
                     <p>Description : Si vous êtes supporter du club, assumez publiquement vos convictions. Si vous ne l'êtes pas, vous saurez l'utiliser comme il se doit dans les mélées de hooligans.</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: basse</li>
-                      <!--1-->
-                      <li>Taille : grande</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : lait</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: basique</li>
+                        <li>Taille : grande</li>
+                        <li>Utilisable pour la boisson : lait</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
       </div>
-
       <!--Card 10-->
 
       <!--1-->
@@ -894,56 +879,53 @@
                     <p>Description : Commencez la journée par une bande dessinée! L'excellente chute de la blague amorcée par ce premier mug est disponible au dos du mug Genghis Khan</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: moyenne</li>
-                      <!--1-->
-                      <li>Taille : petite</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : thé</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: medium</li>
+                        <li>Taille : petite</li>
+                        <li>Utilisable pour la boisson : thé</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
       </div>
-
       <!--Card 11-->
       <!--1-->
       <div data-toggle="modal" data-target="#modal11" class="card acartentiere col-12 col-sm-6 col-md-3 ml-md-3 ml-sm-2 mr-sm-2 col-lg-2 m-2 p-0">
@@ -985,56 +967,53 @@
                     <p>Description : Les Licornes... Il n'y a que cela de vrai!</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: haute</li>
-                      <!--1-->
-                      <li>Taille : petite</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : lait</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: luxe</li>
+                        <li>Taille : petite</li>
+                        <li>Utilisable pour la boisson : lait</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
       </div>
-
       <!--Card 12-->
       <!--1-->
       <div data-toggle="modal" data-target="#modal12" class="card acartentiere col-12 col-sm-6 col-md-3 ml-md-3 ml-sm-2 mr-sm-2 col-lg-2 m-2 p-0">
@@ -1076,51 +1055,49 @@
                     <p>Description : Mieux qu'un quelconque chat mignon: un lapin mignon!</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: basique</li>
-                      <!--1-->
-                      <li>Taille : grande</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : café</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: basique</li>
+                        <li>Taille : grande</li>
+                        <li>Utilisable pour la boisson : café</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -1167,51 +1144,49 @@
                     <p>Description : Un tricératops quadrangulaire est dessiné sur ce mug. Seuls les fins connaisseurs d'art moderne sauront le dénicher, et apprécier cette tasse, objectivement réservée à l'élite de la Nation.</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: premium</li>
-                      <!--1-->
-                      <li>Taille : petite</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : thé</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: luxe</li>
+                        <li>Taille : petite</li>
+                        <li>Utilisable pour la boisson : thé</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -1258,51 +1233,49 @@
                     <p>Description : Contrairement aux vrais chats, ce mug sera un compagnon fidèle et serviable.</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: moyenne</li>
-                      <!--1-->
-                      <li>Taille : medium</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : lait</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Couleur
-                </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: standard</li>
+                        <li>Taille : moyenne</li>
+                        <li>Utilisable pour la boisson : lait</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Couleur
+              </button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
+                      </div>
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quantité
+              </button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Quantité
-                </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
-                      </div>
-                    </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -1349,51 +1322,49 @@
                     <p>Description : Ce mug a une propriété particulière. Il débusque les trolls. D'ailleurs, c'est plus qu'un mug, c'est un concept. Comme la phrase ironique qui l'accompagne. Le prix est en conséquence.</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row justify-content-center">
-                    <h4>Caractéristiques</h4>
-                  </div>
+                <!--ajouts-->
+                <div class="container-fluid">
                   <div class="row">
-                    <ul>
-                      <!--1-->
-                      <li>Gamme: basique</li>
-                      <!--1-->
-                      <li>Taille : petite</li>
-                      <!--1-->
-                      <li>Utilisable pour la boisson : thé</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" col-6 ">
-                  <div class="row justify-content-around">
-                    <div class="dropdown">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="col-6">
+                      <h4>Caractéristiques</h4>
+                      <ul>
+                        <li>Gamme: basique</li>
+                        <li>Taille : petite</li>
+                        <li>Utilisable pour la boisson : thé</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Couleur
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">Noir</button>
-                        <button class="dropdown-item" type="button">Bleu</button>
-                        <button class="dropdown-item" type="button">Rouge</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">Noir</button>
+                          <button class="dropdown-item" type="button">Bleu</button>
+                          <button class="dropdown-item" type="button">Rouge</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown ">
-                      <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="dropdown d-inline">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Quantité
                 </button>
-                      <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button">1</button>
-                        <button class="dropdown-item" type="button">2</button>
-                        <button class="dropdown-item" type="button">3</button>
+                        <div class="dropdown-menu">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                        </div>
                       </div>
                     </div>
+                    <button type="button" class=" mx-auto btn btn-success btn-lg m-t-3">Ajouter au panier</button>
                   </div>
                 </div>
+
               </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
-              </div>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -1405,7 +1376,7 @@
   </section>
   <!--FOOTER-->
 
- <footer>
+  <footer>
 
     <div class="E_jumbotron jumbotron-fluid">
       <div class="E_container-fluid container-fluid">
@@ -1419,51 +1390,53 @@
               <p class="card-text"><a href="#">Notre équipe</a></p>
               <p class="card-text"><a href="#">Meilleurs ventes</a></p>
               <p class="card-text"><a href="#">Nous contacter</a></p>
-              <p class="card-text"><a href="#">Mentions légales</a></p> </div> </div> <!--categories-->
-
-                  <div class="E_card col-sm-2">
-                    <div class="E_parts">
-                    <p class="card-text"><a href="pens.html">Stylos</a></p>
-                    <p class="card-text"><a href="plushies.html">Peluches</a></p>
-                    <p class="card-text"><a href="mugs.html">Mugs</a></p>
-                    <p class="card-text"><a href="socks.html">Chaussettes</a></p>
-
-                    </div>
-                  </div>
-
-                  <!--adresse-->
-
-                  <div class="E_card col-sm-3">
-                    <div class="E_adresse ">
-                      <h2 class="card-title">Wild Bazar</h2>
-                      <p class="card-text">1, rue de la Paix</p>
-                      <p class="card-text">75000 Paris</p>
-                      <p class="card-text">01.23.45.67.89</p>
-                    </div>
-                  </div>
-
-                   <!--form-->
-
-                   <div class="E_form col-sm-3 offset-1">
-                      <form>
-                        <div class="E_form-group">
-                          <label for="footer">E-mail</label>
-                          <input type="email" class="form-control" id="footer" placeholder="nom@exemple.com">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Commentaires</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="col-sm-4 offset-5">
-                          <button type="submit"
-                            class="btn btn-light align-items-center justify-content-end">Envoyer</button>
-                        </div>
-                        </form>
-                    </div>
-              </div>
+              <p class="card-text"><a href="#">Mentions légales</a></p>
             </div>
           </div>
-    </footer>
+          <!--categories-->
+
+          <div class="E_card col-sm-2">
+            <div class="E_parts">
+              <p class="card-text"><a href="pens.html">Stylos</a></p>
+              <p class="card-text"><a href="plushies.html">Peluches</a></p>
+              <p class="card-text"><a href="mugs.html">Mugs</a></p>
+              <p class="card-text"><a href="socks.html">Chaussettes</a></p>
+
+            </div>
+          </div>
+
+          <!--adresse-->
+
+          <div class="E_card col-sm-3">
+            <div class="E_adresse ">
+              <h2 class="card-title">Wild Bazar</h2>
+              <p class="card-text">1, rue de la Paix</p>
+              <p class="card-text">75000 Paris</p>
+              <p class="card-text">01.23.45.67.89</p>
+            </div>
+          </div>
+
+          <!--form-->
+
+          <div class="E_form col-sm-3 offset-1">
+            <form>
+              <div class="E_form-group">
+                <label for="footer">E-mail</label>
+                <input type="email" class="form-control" id="footer" placeholder="nom@exemple.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Commentaires</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="col-sm-4 offset-5">
+                <button type="submit" class="btn btn-light align-items-center justify-content-end">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
 
