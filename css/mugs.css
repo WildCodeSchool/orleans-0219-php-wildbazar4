@@ -80,7 +80,7 @@ p.ytxt {
   transform: scale(1.2);
   transition: all 0.4s ease-in;
 }
-.acontainercartes .card-body {
+.acontainerarticle{
   background-color: #f5f5f5;
 }
 .aproductname {
