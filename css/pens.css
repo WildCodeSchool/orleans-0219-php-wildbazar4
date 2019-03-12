@@ -1,6 +1,6 @@
 
 h2 {
-  font-family: Raleway;
+  font-family: Raleway ;
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
@@ -47,8 +47,7 @@ h1.ytxtban {
 p.ytxt {
   font-size: 50px;
 }
-.ytxtban,
-.ytxt {
+.ytxtban, .ytxt {
   color: #fffcf2;
   text-shadow: 0.5px 0.5px #000000;
   font-family: "Raleway";
@@ -61,14 +60,12 @@ p.ytxt {
   flex-grow: 0.9;
 }
 
-
+/*card*/
 .card{
   margin: 20px;
   width: 25%;
 }
-body{
-  background-color: #efe1b499;
-}
+
 .ypad{
   margin:4vw 0;
 }
@@ -107,9 +104,9 @@ span.ydore{
   transform: scale(1.2);
   transition: all 0.4s ease-in;
 }
-.acontainercartes .card-body{
+.acontainerarticle{
 
-  background-color: #F5F5F5;  
+  background-color: #F5F5F5;
 
 }
 .card{
@@ -127,16 +124,11 @@ span.ydore{
   font-weight: bold;
   font-size: 25px;
   text-align: center;
-}
-.card-body{
-  background-color: rgba(44,33,27,0.9);
-}
-
 
 .acartentiere {
   width: 100%;
   border: solid 1px  #b5985a;
-  
+
 }
 
 /*FOOTER*/
@@ -146,7 +138,7 @@ span.ydore{
   border: 10px;
   padding: 30px;
   }
-  
+
   .E_card {
   text-align:center;
   align-items:center;
@@ -172,4 +164,4 @@ span.ydore{
 span.ybar{
 display:none;
 }
-} 
+}
