@@ -14,6 +14,8 @@
   <!-- header -->
 
   <?php
+  $typeOfArticle='Socks';
+  /*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
   $category = 'socksjumbotron';
   $jumbotronH1 = 'Chaussettes';
   $jumbotronP = 'Pour votre rentrée à la Wild Code School';

@@ -18,6 +18,8 @@
     </head>
 
     <?php
+    $typeOfArticle='Plushies';
+    /*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
     $category = 'plushiesjumbotron';
     $jumbotronH1 = 'Peluches';
     $jumbotronP = 'Tout un monde de douceur!';
