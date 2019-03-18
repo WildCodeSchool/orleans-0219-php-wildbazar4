@@ -29,17 +29,12 @@ include 'header.php';
       <div class="row justify-content-center">
 
 
-<!--CARTES-->
-<section class=" acontainercartes container-fluid">
-
-    <div class="row justify-content-center">
-
 
 
 
 <?php include 'modalgenerator.php'; ?>
 
-
+    </div>
 </section>
 
 
