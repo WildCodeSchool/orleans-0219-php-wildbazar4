@@ -36,13 +36,11 @@
             [ 'name' => 'Stylo Bille' , 'price' =>  '5,50 €' , 'hight' => '50mm' , 'pod' => '10g' , 'image' => 'images/y8.jpg' , 'altAtribut' => 'Stylo' , 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue est in sapien cursus, vitae varius eros finibus. Morbi at est euismod, dapibus arcu vitae, vehicula sapien.' ] ,
             [ 'name' => 'Stylo Feutre' , 'price' =>  '6,50 €' , 'hight' => '50mm' , 'pod' => '10g' , 'image' => 'images/y9.jpg' , 'altAtribut' => 'Stylo' , 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue est in sapien cursus, vitae varius eros finibus. Morbi at est euismod, dapibus arcu vitae, vehicula sapien.' ] ,
      ];
- $i=0;
 
- foreach ($pens as $pen){
-     $i++;
+ foreach ($pens as $i => $pen){
+
 
      ?>
-
   <!--Card'.$i.'-->
   <div data-toggle="modal" data-target="#modal<?php echo $i ?> " class="card acartentiere col-12 col-sm-6 col-md-3 ml-md-3 ml-sm-2 mr-sm-2 col-lg-2 m-2 p-0">
     <img src= "<?php echo $pen['image'] ?>" class= "card-img acardimage m-2 p-5" alt=" <?php echo $pen['altAtribut'] ?> ">
