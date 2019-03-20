@@ -26,9 +26,9 @@
           <h1 class="text-center ytxtban"> <?php echo $titleJumbotron ?></h1>
           <p class="text-center ytxt"> <?php echo $textJumbotron ?></p>
           <div class="text-center p-4">
-              <a href="add-<?php echo $category?>.html"> <button type="button" class="text-center btn btn-secondary btn-lg" >
+              <a href="add-<?php echo $category?>.php"> <button type="button" class="text-center btn btn-secondary btn-lg" >
                   ADD NEW</button></a>
-          </div>
+          </divgit
       </div>
 
   </header>
