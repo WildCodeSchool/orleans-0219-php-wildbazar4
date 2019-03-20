@@ -13,8 +13,14 @@
     <title></title>
 </head>
 <body>
+<?php
+$category = 'pens';
+$titleJumbotron = 'Stylos';
+$textJumbotron = 'Découvrez notre nouvelle gamme de stylos';
+?>
 <?php include 'header.php'?>
 <h1></h1>
+
 <?php include 'footer.php'?>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
