@@ -35,7 +35,7 @@ footer{
 
 /*bannière accueil*/
 
-.indexjumbotron {
+.index {
   padding: 11rem 2rem;
   background-size: cover;
   background-attachment: fixed;
@@ -43,28 +43,28 @@ footer{
   background-image: url(images/test2.jpg)
 }
 
-.pensjumbotron {
+.pens {
   padding: 11rem 2rem;
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
   background-image: url(images/bg_4.jpg)}
 
-.socksjumbotron {
+.socks {
     padding: 11rem 2rem;
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 0px;
     background-image: url(images/socks-banner.jpg)}
 
-.plushiesjumbotron {
+.plushies {
       padding: 11rem 2rem;
       background-size: cover;
       background-attachment: fixed;
       margin-bottom: 0px;
       background-image: url(images/peluches.jpg)}
 
-.mugsjumbotron {
+.mugs {
         padding: 11rem 2rem;
         background-size: cover;
         background-attachment: fixed;

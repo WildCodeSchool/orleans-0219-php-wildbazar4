@@ -20,7 +20,7 @@
 <?php
     $typeOfArticle='Plushies';
 /*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
-    $category = 'plushiesjumbotron';
+    $category = 'plushies';
     $titleJumbotron= 'Peluches';
     $textJumbotron = 'Tout un monde de douceur!';
 

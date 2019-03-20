@@ -19,7 +19,7 @@
 <?php
     $typeOfArticle='Pens';
 /*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
-    $category = 'pensjumbotron';
+    $category = 'pens';
     $titleJumbotron = 'Stylos';
     $textJumbotron = 'Découvrez notre nouvelle gamme de stylos';
 include 'header.php';

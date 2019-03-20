@@ -18,10 +18,11 @@
 <!-- header -->
 <?php
 $typeOfArticle='Mugs';
-/*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
-$category = 'mugsjumbotron';
+
+$category = 'mugs';
     $titleJumbotron = 'Mugs';
     $textJumbotron = 'Trouvez le mug de vos rêves!';
+    $linkJumbotron = 'addmug.php';
 include 'header.php';
 ?>
 
