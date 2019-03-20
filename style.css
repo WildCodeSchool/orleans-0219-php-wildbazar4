@@ -337,3 +337,9 @@ p.ytxt{
   border: none;
   box-shadow: 0px 15px 20px rgba(181, 152, 90, 0.4);
 }
+
+#titrepageajouterunmug{
+  text-align: center;
+  margin-top: 0vw;
+  margin-bottom: 1vw;
+}
