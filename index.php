@@ -16,8 +16,8 @@
 <body>
 <?php
     $category = 'indexjumbotron';
-    $jumbotronH1 = 'Wild Bazar';
-    $jumbotronP = 'On y trouve de tout et surtout du<br> n\'importe quoi !';
+    $titleJumbotron = 'Wild Bazar';
+    $textJumbotron = 'On y trouve de tout et surtout du<br> n\'importe quoi !';
     include 'header.php';
 ?>
 

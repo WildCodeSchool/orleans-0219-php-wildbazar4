@@ -14,11 +14,11 @@
 <!-- header -->
 
 <?php
-$typeOfArticle='Socks';
+    $typeOfArticle='Socks';
 /*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
-$category = 'socksjumbotron';
-$jumbotronH1 = 'Chaussettes';
-$jumbotronP = 'Pour votre rentrée à la Wild Code School';
+    $category = 'socksjumbotron';
+    $titleJumbotron = 'Chaussettes';
+    $textJumbotron = 'Pour votre rentrée à la Wild Code School';
 include 'header.php';
 ?>
 
