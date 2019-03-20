@@ -20,8 +20,8 @@
 $typeOfArticle='Mugs';
 /*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
 $category = 'mugsjumbotron';
-$jumbotronH1 = 'Mugs';
-$jumbotronP = 'Trouvez le mug de vos rêves!';
+    $titleJumbotron = 'Mugs';
+    $textJumbotron = 'Trouvez le mug de vos rêves!';
 include 'header.php';
 ?>
 

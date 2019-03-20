@@ -18,11 +18,11 @@
 </head>
 
 <?php
-$typeOfArticle='Plushies';
+    $typeOfArticle='Plushies';
 /*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
-$category = 'plushiesjumbotron';
-$jumbotronH1 = 'Peluches';
-$jumbotronP = 'Tout un monde de douceur!';
+    $category = 'plushiesjumbotron';
+    $titleJumbotron= 'Peluches';
+    $textJumbotron = 'Tout un monde de douceur!';
 
 include 'header.php';
 ?>

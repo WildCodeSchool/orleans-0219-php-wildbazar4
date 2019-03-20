@@ -17,11 +17,11 @@
 <body>
 <!-- header -->
 <?php
-$typeOfArticle='Pens';
+    $typeOfArticle='Pens';
 /*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
-$category = 'pensjumbotron';
-$jumbotronH1 = 'Stylos';
-$jumbotronP = 'Découvrez notre nouvelle gamme de stylos';
+    $category = 'pensjumbotron';
+    $titleJumbotron = 'Stylos';
+    $textJumbotron = 'Découvrez notre nouvelle gamme de stylos';
 include 'header.php';
 ?>
 

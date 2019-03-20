@@ -23,8 +23,8 @@
       </div>
     </nav>
       <div class="jumbotron jumbotron-fluid <?php echo $category ?>">
-          <h1 class="text-center ytxtban"> <?php echo $jumbotronH1 ?></h1>
-          <p class="text-center ytxt"> <?php echo $jumbotronP ?></p>
+          <h1 class="text-center ytxtban"> <?php echo $titleJumbotron ?></h1>
+          <p class="text-center ytxt"> <?php echo $textJumbotron ?></p>
       </div>
   </header>
 
