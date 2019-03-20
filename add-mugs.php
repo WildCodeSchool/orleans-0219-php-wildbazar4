@@ -38,7 +38,7 @@ include 'header.php';
 
 
 <section class="container-fluid justify-content-center">
-  <h1 id="titrepageajouterunmug">Ajouter un mug !</h1>
+  <h2 id="titrepageajouterunmug">Ajouter un mug !</h2>
   <div class="row justify-content-center">
 
 
@@ -111,7 +111,7 @@ include 'header.php';
 
 
       <div class="form-group  mt-5 text-center">
-        <button type="submit" class="btn btn-primary mt-3 lg">Envoyer!</button>
+        <button type="submit" class="btn btn-confirm mx-auto btn-lg m-t-3">Envoyer!</button>
       </div>
 
     </form>
