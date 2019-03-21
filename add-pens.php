@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CPermanent+Marker%7CRoboto%7CSource+Sans+Pro%7CRaleway"
           rel="stylesheet">
 
-    <title></title>
+    <title>Stylos Wild Bazar</title>
 </head>
 <body>
 <?php
