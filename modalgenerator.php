@@ -15,7 +15,7 @@ foreach ($articles["$typeOfArticle"] as $crapReference) {
          alt="<?php echo $crapReference['altAtribute'] ?>">
     <div class="card-body d-flex flex-column acontainerarticle p-1">
       <p class="card-title aproductname m-0 text-center"><?php echo $crapReference['name'] ?></p>
-      <p class="card-text align-self-center text-center aprix "><?php echo $crapReference['price'] ?></p>
+      <p class="card-text align-self-center text-center aprix "><?php echo $crapReference['price'] ?> €</p>
     </div>
   </div>
 
@@ -39,7 +39,7 @@ foreach ($articles["$typeOfArticle"] as $crapReference) {
             </div>
             <div class="col-6">
               <div class="row justify-content-center">
-                <p class="aprix"><?php echo $crapReference['price'] ?></p>
+                <p class="aprix"><?php echo $crapReference['price'] ?> €</p>
               </div>
 
               <div class="row mt-5">
@@ -76,7 +76,7 @@ foreach ($articles["$typeOfArticle"] as $crapReference) {
 
 
               </div></div>
-              <button type="button" class="btn-add-to-cart mx-auto btn btn-lg m-t-3">Ajouter au panier</button>
+              <button type="button" class="btn-confirm mx-auto btn btn-lg m-t-3">Ajouter au panier</button>
             </div>
 
 
