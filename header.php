@@ -23,7 +23,6 @@ HTML;
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="pens.php"><span class="ycat">Stylos</span><span class="ybar ml-3">|</span></a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="plushies.php"><span class="ycat">Peluches</span><span class="ybar ml-3">|</span></a>
           </li>
