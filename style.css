@@ -323,7 +323,7 @@ p.ytxt{
   padding-top:2vw;
 }
 
-.btn-add-to-cart{
+.btn-confirm{
   color : #f5f5f5;
   background-color: #b5985a;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
@@ -331,7 +331,7 @@ p.ytxt{
   border: none;
 }
 
-.btn-add-to-cart:hover{
+.btn-confirm:hover{
   background-color: #7b643d;
   color : #f5f5f5;
   border: none;

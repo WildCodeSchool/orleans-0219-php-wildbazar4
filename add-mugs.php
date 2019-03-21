@@ -30,6 +30,28 @@ include 'header.php';
 
 
 <!--Machinerie formulaire-->
+<?php if ($_POST){
+  if(strlen($_POST['productName']>2)){
+    $data['productName']=strip_tags($_POST['productName']);
+  }
+  else{
+    $errors['productName']=strip_tags($_POST['productName']);
+  }
+
+    if(is_numeric($_POST['productPrice'])&& 0<$_POST['productPrice']){
+        $data['productPrice']=strip_tags($_POST['productPrice']);
+    }
+    else{
+        $errors['productPrice']=strip_tags($_POST['productprice']);
+    }
+
+
+}?>
+
+
+
+
+
 
 
 <!--FORMULAIRE-->
@@ -38,101 +60,89 @@ include 'header.php';
 
 
 <section class="container-fluid justify-content-center">
-  <h1>Ajouter un mug !</h1>
+  <h2 id="titrepageajouterunmug">Ajouter un mug !</h2>
   <div class="row justify-content-center">
+<!--AJOUTER VALUE= VAR-->
 
-
-    <form action="" method="post">
+    <form class="col-4" action="" method="post">
       <div class="form-group">
         <div>
-          <label class="" for="name">Nom:</label>
-          <input type="text" class="form-control mb-2" id="name" name="userName" placeholder="Dupont" required>
-            <?php
-            if (!empty($_POST)) {
-                if (strlen($_POST['userName']) > 2) {
-                    $contactForm['userName'] = $_POST['userName'];
-                } else {
-                    $errors['userName'] = $_POST['userName'];
-                    echo "Votre nom ne peut pas faire moins de deux lettres!";
-                }
-            }
-            ?>
-        </div>
-        <div>
-          <label class="" for="firstName">Prénom :</label>
-          <input type="text" class="form-control mb-2" id="firstName" name="userFirstName" placeholder="Jeanne"
-                 required>
-            <?php
-            if (!empty($_POST)) {
-                if (strlen($_POST['userFirstName']) > 2) {
-                    $contactForm['firstName'] = $_POST['userFirstName'];
-                } else {
-                    $errors['firstName'] = $_POST['userFirstName'];
-                    echo "Votre prénom ne peut pas faire moins deux lettres! (ou changez-en)";
-                }
-            }
-            ?>
-        </div>
-        <div>
-          <label for="emailAdress">Adresse e-mail</label>
-          <input type="email" class="form-control" id="emailAdress" name="userEmail" placeholder="nom@example.com"
-                 required>
-            <?php
-            if (!empty($_POST)) {
+          <label for="productName">Nom du produit:</label>
+          <input type="text" class="form-control mb-2" id="productName" name="productName" placeholder="Mug électronique" value="<?php if (isset($data['productName']))
+          {
+            echo $data['productName'];
+          }?>">
+         <?php if(isset($errors['productName']))
+         {
+           echo 'Le nom de votre produit doit contenir au moins 3 caractères';
+         }?>
 
-                if (filter_var($_POST['userEmail'], (FILTER_VALIDATE_EMAIL))) {
-                    $contactForm['userMail'] = $_POST['userEmail'];
-                } else {
-                    $errors['userMail'] = $_POST['userEmail'];
-                    echo "Les adresses mail de moins de cinq caractères ou sans @ sont réservées à Chuck Norris";
-                }
-            }
-            ?>
-          <label for="phoneNumber">Numéro de téléphone</label>
-          <input type="tel" class="form-control" id="phoneNumber" name="userPhoneNumber" placeholder="0607080910"
-                 required>
-            <?php
-            if (!empty($_POST)) {
-                if (strlen($_POST['userPhoneNumber']) > 9) {
-                    $contactForm['phonenumber'] = $_POST['userPhoneNumber'];
-                } else {
-                    $errors['phonenumber'] = $_POST['userPhoneNumber'];
-                    echo "Les numéros de téléphones de moins de 10 chiffres sont réservés aux utilisateurs du XIe siècle ";
-                }
-            }
-            ?>
+                 </div>
+        <div>
+          <label class="" for="productPrice">Prix (Ne pas ajouter la devise):</label>
+          <input type="number" step="0.01" class="form-control mb-2" id="productPrice" name="productPrice" placeholder="12,32">
+
         </div>
       </div>
-      <div class="form-group">
-        <label for="messageSubject">Sujet du message</label>
-        <select class="form-control" id="messageSubject" name="messageSubject" required>
-          <option>Je voudrais envoyer un message</option>
-          <option>Je n'ai rien à dire</option>
-          <option>Je ne sais pas utiliser un formulaire de contact</option>
-          <option>La réponse D</option>
+
+
+          <label for="photoName">Nom photo produit</label>
+          <input type="text" class="form-control mb-2" id="photoName" name="photoName" placeholder="exemple: a14.jpg">
+
+
+
+          <label  for="altAttribute">Description photo:</label>
+          <input type="text" class="form-control mb-2" id="altAttribute" name="altAttribute" placeholder="Exemple: mug vert et rouge en forme de cône.">
+
+
+
+        <div class="form-group">
+          <label for="productDescription">Description du produit</label>
+          <textarea class="form-control" id="productDescription" name="productDescription" rows="3" placeholder="255 caractères maximum"></textarea>
+
+        </div>
+
+
+      <div class="form-group container">
+        <div class="row">
+          <div class="col-4">
+        <label for="productRange">Gamme</label>
+        <select class="form-control" id="productRange" name="productRange">
+          <option></option>
+          <option>Luxe</option>
+          <option>Standard</option>
+          <option>Basique</option>
 
         </select>
+          </div>
+        <div class="col-4">
+        <label for="productSize">Taille</label>
+        <select class="form-control" id="productSize" name="productSize">
+          <option></option>
+          <option>Petite</option>
+          <option>Moyenne</option>
+          <option>Grande</option>
+
+        </select>
+        </div>
+
+          <div class="col-4">
+            <label for="productDrink">Boisson</label>
+            <select class="form-control" id="productDrink" name="productDrink">
+              <option></option>
+              <option>Thé</option>
+              <option>Café</option>
+              <option>Lait</option>
+
+            </select>
+          </div>
       </div>
 
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Votre message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" name="userMessage" rows="3" required></textarea>
-          <?php
-          if (!empty($_POST)) {
-              if (strlen($_POST['userPhoneNumber']) > 10) {
-                  $contactForm['message'] = $_POST['userMessage'];
-              } else {
-                  $errors['message'] = $_POST['userMessage'];
-                  echo "Au moins dix caractères sont nécessaires pour être intelligible";
-              }
-          }
 
+      <div class="form-group  mt-5 text-center">
+        <button type="submit" class="btn btn-confirm mx-auto btn-lg m-t-3">Envoyer!</button>
+      </div>
 
-          ?>
-      </div>
-      <div class="form-group col-3 text-center">
-        <button type="submit" class="btn btn-primary m-t-2 lg">Envoyer!</button>
-      </div>
     </form>
 
 
@@ -151,7 +161,7 @@ include 'header.php';
 </section>
 
 
-<?php include 'footer.php' ?>
+<?php include 'footer.php'; ?>
 
 <!-- Optional JavaScript -->
 
@@ -166,6 +176,8 @@ include 'header.php';
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
