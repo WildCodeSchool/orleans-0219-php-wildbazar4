@@ -36,7 +36,7 @@
                         <p class="card-text">75000 Paris</p>
                         <p class="card-text">01.23.45.67.89</p>
                     </div>
-                </div>git
+                </div>
 
                 <!--form-->
 
