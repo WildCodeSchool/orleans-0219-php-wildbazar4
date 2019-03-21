@@ -30,6 +30,28 @@ include 'header.php';
 
 
 <!--Machinerie formulaire-->
+<?php if ($_POST){
+  if(strlen($_POST['productName']>2)){
+    $data['productName']=strip_tags($_POST['productName']);
+  }
+  else{
+    $errors['productName']=strip_tags($_POST['productName']);
+  }
+
+    if(is_numeric($_POST['productPrice'])&& 0<$_POST['productPrice']){
+        $data['productPrice']=strip_tags($_POST['productPrice']);
+    }
+    else{
+        $errors['productPrice']=strip_tags($_POST['productprice']);
+    }
+
+
+}?>
+
+
+
+
+
 
 
 <!--FORMULAIRE-->
@@ -40,15 +62,22 @@ include 'header.php';
 <section class="container-fluid justify-content-center">
   <h2 id="titrepageajouterunmug">Ajouter un mug !</h2>
   <div class="row justify-content-center">
-
+<!--AJOUTER VALUE= VAR-->
 
     <form class="col-4" action="" method="post">
       <div class="form-group">
         <div>
           <label for="productName">Nom du produit:</label>
-          <input type="text" class="form-control mb-2" id="productName" name="productName" placeholder="Mug électronique">
+          <input type="text" class="form-control mb-2" id="productName" name="productName" placeholder="Mug électronique" value="<?php if (isset($data['productName']))
+          {
+            echo $data['productName'];
+          }?>">
+         <?php if(isset($errors['productName']))
+         {
+           echo 'Le nom de votre produit doit contenir au moins 3 caractères';
+         }?>
 
-        </div>
+                 </div>
         <div>
           <label class="" for="productPrice">Prix (Ne pas ajouter la devise):</label>
           <input type="number" step="0.01" class="form-control mb-2" id="productPrice" name="productPrice" placeholder="12,32">
@@ -132,7 +161,7 @@ include 'header.php';
 </section>
 
 
-<?php include 'footer.php' ?>
+<?php include 'footer.php'; ?>
 
 <!-- Optional JavaScript -->
 
@@ -147,6 +176,8 @@ include 'header.php';
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
