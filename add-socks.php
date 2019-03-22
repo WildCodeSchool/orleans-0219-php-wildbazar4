@@ -14,24 +14,23 @@
 <body>
 <!-- header -->
 <?php
-    $pairSocks = [];
     $category = 'socks';
     $titleJumbotron = 'Chaussettes';
     $textJumbotron = 'Ajoutez vos chaussettes ici';
-    include 'header.php';
-    include 'function.php';
-    $data = cleanArray($_POST);
+
+    require 'header.php';
+    require 'function.php';
 
     $errors = [];
-    $pairSocks = ['one' => '1 paire','two' => 'Lot de 2 paires','three' => 'Lot de 3 paires','four' => 'Lot de 4 paires','five' => 'Lot de 5 paires'];
+    $pairSocks = ['1 paire' => 'one','Lot de 2 paires' => 'two','Lot de 3 paires' => 'three','Lot de 4 paires' => 'four','Lot de 5 paires' => 'five'];
     $emptyField = 'Le champ ne peut pas être vide.';
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        var_dump($_POST);
+        $data = cleanArray($_POST);
         $maxLengthName = 100;
         $maxDefault = 255;
 
-        if (empty($data["name"])){
+        if (empty($data['name'])){
             $errors['name'] = $emptyField;
         } elseif ((strlen($data['name']) > $maxLengthName)) {
             $errors['name'] = 'Votre nom de produit ne peut pas être supérieur à ' . $maxLengthName . 'caractères';
@@ -73,7 +72,7 @@
             $errors['alt']  = 'Le description de votre image ne peut pas être supérieure à ' . $maxDefault . 'caractères';
         }
 
-        if (!in_array($data['pairSocks'], $numberPair)) {
+        if (!in_array($data['pairSocks'], $pairSocks)) {
             $errors['pairSocks'] = 'La valeur doit faire partie de la liste';
         }
 
@@ -82,16 +81,15 @@
         }
     }
 
-
-
 ?>
+
 <section class="container">
     <div class="justify-content-center" >
         <h2>Ajouter des chaussettes</h2>
         <form method="POST" action="add-socks.php" >
             <div class="form-group">
                 <label for="name">Nom du produit</label>
-                <input  class="form-control" type="text"  id="name"  name="name" value="<?php echo $data['name'];?>">
+                <input required class="form-control" type="text"  id="name"  name="name" value="<?= $data['name'] ?? '' ?>">
                 <?php if (!empty($errors['name'])) : ?>
                 <div class="error text-danger"> <?= $errors['name'] ?> </div>
                 <?php endif; ?>
@@ -100,7 +98,7 @@
 
             <div class="form-group">
                 <label for="price">Prix du produit</label>
-                <input  class="form-control" type="number" step="0.01" id="price" name="price" value="<?php echo $data['price'];?>">
+                <input required class="form-control" type="number" step="0.01" id="price" name="price" value="<?= $data['price'] ?? ''?>">
                 <?php if (!empty($errors['price'])) : ?>
                     <div class="error text-danger"> <?= $errors['price'] ?> </div>
                 <?php endif; ?>
@@ -108,33 +106,39 @@
 
             <div class="form-group">
                 <label for="description">Description du produit</label>
-                <textarea class="form-control" id="description" name="description"><?php echo $data['description'];?></textarea>
+                <textarea required class="form-control" id="description" name="description"><?= $data['description'] ?? ''?></textarea>
                 <?php if (!empty($errors['description'])) : ?>
                     <div class="error text-danger"> <?= $errors['description'] ?> </div>
                 <?php endif; ?>
             </div>
 
             <div class="form-group">
-                <label for="quantity">Lot</label>
-                <select  class="form-control"  id="quantity" name="quantity" value="<?php echo $data['quantity'];?>">
-                    <option value="socks-quantity-one">1 paire</option>
-                    <option value="socks-quantity-two">Lot de 2 paires</option>
-                    <option value="socks-quantity-three">Lot de 3 paires</option>
-                    <option value="socks-quantity-four">Lot de 4 paires</option>
-                    <option value="socks-quantity-five">Lot de 5 paires</option>
-                    <span>*</span>
+                <label for="pairSocks">Lot</label>
+                <select required class="form-control"  id="pairSocks" name="pairSocks">
+                    <option value="">Nombre de paires</option>
+                    <?php foreach ($pairSocks as $labelPair => $numberPair) : ?>
+                        <option value="<?=$numberPair?>"
+                        <?php if(!empty($data['pairSocks']) && $data['pairSocks'] === $numberPair): ?>
+                            selected
+                        <?php endif; ?>
+                        >
+                        <?= $labelPair?></option>
+                    <?php endforeach; ?>
                 </select>
+                <?php if (!empty($errors['pairSocks'])) : ?>
+                    <div class="error text-danger"> <?= $errors['pairSocks']?> </div>
+                <?php endif; ?>
             </div>
             <div class="form-group">
                 <label for="cloth">Matière</label>
-                <input class="form-control" type="text"  id="cloth"  name="cloth" value="<?php echo $data['cloth'];?>">
+                <input required class="form-control" type="text"  id="cloth"  name="cloth" value="<?= $data['cloth'] ?? '' ?>">
                 <?php if (!empty($errors['cloth'])) : ?>
                     <div class="error text-danger"> <?= $errors['cloth'] ?> </div>
                 <?php endif; ?>
             </div>
             <div class="form-group">
                 <label for="available">Disponibilité</label>
-                <input class="form-control" type="text"  id="available"  name="available" value="<?php echo $data['available'];?>">
+                <input required class="form-control" type="text"  id="available"  name="available" value="<?= $data['available'] ?? ''?>">
                 <?php if (!empty($errors['available'])) : ?>
                     <div class="error text-danger"> <?= $errors['available'] ?> </div>
                 <?php endif; ?>
@@ -142,7 +146,7 @@
 
             <div class="form-group">
                 <label for="image">Photo</label>
-                <input class="form-control" type="text"  id="image"  name="image" value="<?php echo $data['image'];?>">
+                <input required class="form-control" type="text"  id="image"  name="image" value="<?= $data['image'] ?? ''?>">
                 <?php if (!empty($errors['image'])) : ?>
                     <div class="error text-danger"> <?= $errors['image'] ?> </div>
                 <?php endif; ?>
@@ -150,7 +154,7 @@
 
             <div class="form-group">
                 <label for="alt">Description de la photo</label>
-                <input class="form-control" type="text"  id="alt"  name="alt" value="<?php echo $data['alt'];?>">
+                <input required class="form-control" type="text"  id="alt"  name="alt" value="<?= $data['alt'] ?? ''?>">
                 <?php if (!empty($errors['alt'])) : ?>
                     <div class="error text-danger"> <?= $errors['alt'] ?> </div>
                 <?php endif; ?>
