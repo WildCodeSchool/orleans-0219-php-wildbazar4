@@ -83,88 +83,90 @@
 
 ?>
 
-<section class="container">
-    <div class="justify-content-center" >
-        <h2>Ajouter des chaussettes</h2>
-        <form method="POST" action="add-socks.php" >
-            <div class="form-group">
-                <label for="name">Nom du produit</label>
-                <input required class="form-control" type="text"  id="name"  name="name" value="<?= $data['name'] ?? '' ?>">
-                <?php if (!empty($errors['name'])) : ?>
-                <div class="error text-danger"> <?= $errors['name'] ?> </div>
-                <?php endif; ?>
+<section class="container-fluid">
+    <div class="row justify-content-center " >
+        <div class="col-6">
+            <h2>Ajouter des chaussettes</h2>
+            <form method="POST" action="add-socks.php" >
+                <div class="form-group">
+                    <label for="name">Nom du produit</label>
+                    <input required class="form-control" type="text"  id="name"  name="name" value="<?= $data['name'] ?? '' ?>">
+                    <?php if (!empty($errors['name'])) : ?>
+                    <div class="error text-danger"> <?= $errors['name'] ?> </div>
+                    <?php endif; ?>
 
-            </div>
+                </div>
 
-            <div class="form-group">
-                <label for="price">Prix du produit</label>
-                <input required class="form-control" type="number" step="0.01" id="price" name="price" value="<?= $data['price'] ?? ''?>">
-                <?php if (!empty($errors['price'])) : ?>
-                    <div class="error text-danger"> <?= $errors['price'] ?> </div>
-                <?php endif; ?>
-            </div>
+                <div class="form-group">
+                    <label for="price">Prix du produit</label>
+                    <input required class="form-control" type="number" step="0.01" id="price" name="price" value="<?= $data['price'] ?? ''?>">
+                    <?php if (!empty($errors['price'])) : ?>
+                        <div class="error text-danger"> <?= $errors['price'] ?> </div>
+                    <?php endif; ?>
+                </div>
 
-            <div class="form-group">
-                <label for="description">Description du produit</label>
-                <textarea required class="form-control" id="description" name="description"><?= $data['description'] ?? ''?></textarea>
-                <?php if (!empty($errors['description'])) : ?>
-                    <div class="error text-danger"> <?= $errors['description'] ?> </div>
-                <?php endif; ?>
-            </div>
+                <div class="form-group">
+                    <label for="description">Description du produit</label>
+                    <textarea required class="form-control" id="description" name="description"><?= $data['description'] ?? ''?></textarea>
+                    <?php if (!empty($errors['description'])) : ?>
+                        <div class="error text-danger"> <?= $errors['description'] ?> </div>
+                    <?php endif; ?>
+                </div>
 
-            <div class="form-group">
-                <label for="pairSocks">Lot</label>
-                <select required class="form-control"  id="pairSocks" name="pairSocks">
-                    <option value="">Nombre de paires</option>
-                    <?php foreach ($pairSocks as $labelPair => $numberPair) : ?>
-                        <option value="<?=$numberPair?>"
-                        <?php if(!empty($data['pairSocks']) && $data['pairSocks'] === $numberPair): ?>
-                            selected
-                        <?php endif; ?>
-                        >
-                        <?= $labelPair?></option>
-                    <?php endforeach; ?>
-                </select>
-                <?php if (!empty($errors['pairSocks'])) : ?>
-                    <div class="error text-danger"> <?= $errors['pairSocks']?> </div>
-                <?php endif; ?>
-            </div>
-            <div class="form-group">
-                <label for="cloth">Matière</label>
-                <input required class="form-control" type="text"  id="cloth"  name="cloth" value="<?= $data['cloth'] ?? '' ?>">
-                <?php if (!empty($errors['cloth'])) : ?>
-                    <div class="error text-danger"> <?= $errors['cloth'] ?> </div>
-                <?php endif; ?>
-            </div>
-            <div class="form-group">
-                <label for="available">Disponibilité</label>
-                <input required class="form-control" type="text"  id="available"  name="available" value="<?= $data['available'] ?? ''?>">
-                <?php if (!empty($errors['available'])) : ?>
-                    <div class="error text-danger"> <?= $errors['available'] ?> </div>
-                <?php endif; ?>
-            </div>
+                <div class="form-group">
+                    <label for="pairSocks">Lot</label>
+                    <select required class="form-control custom-select"  id="pairSocks" name="pairSocks">
+                        <option value="">Nombre de paires</option>
+                        <?php foreach ($pairSocks as $labelPair => $numberPair) : ?>
+                            <option value="<?=$numberPair?>"
+                            <?php if(!empty($data['pairSocks']) && $data['pairSocks'] === $numberPair): ?>
+                                selected
+                            <?php endif; ?>
+                            >
+                            <?= $labelPair?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <?php if (!empty($errors['pairSocks'])) : ?>
+                        <div class="error text-danger"> <?= $errors['pairSocks']?> </div>
+                    <?php endif; ?>
+                </div>
+                <div class="form-group">
+                    <label for="cloth">Matière</label>
+                    <input required class="form-control" type="text"  id="cloth"  name="cloth" value="<?= $data['cloth'] ?? '' ?>">
+                    <?php if (!empty($errors['cloth'])) : ?>
+                        <div class="error text-danger"> <?= $errors['cloth'] ?> </div>
+                    <?php endif; ?>
+                </div>
+                <div class="form-group">
+                    <label for="available">Disponibilité</label>
+                    <input required class="form-control " type="text"  id="available"  name="available" value="<?= $data['available'] ?? ''?>">
+                    <?php if (!empty($errors['available'])) : ?>
+                        <div class="error text-danger"> <?= $errors['available'] ?> </div>
+                    <?php endif; ?>
+                </div>
 
-            <div class="form-group">
-                <label for="image">Photo</label>
-                <input required class="form-control" type="text"  id="image"  name="image" value="<?= $data['image'] ?? ''?>">
-                <?php if (!empty($errors['image'])) : ?>
-                    <div class="error text-danger"> <?= $errors['image'] ?> </div>
-                <?php endif; ?>
-            </div>
+                <div class="form-group">
+                    <label for="image">Photo</label>
+                    <input required class="form-control" type="text"  id="image"  name="image" value="<?= $data['image'] ?? ''?>">
+                    <?php if (!empty($errors['image'])) : ?>
+                        <div class="error text-danger"> <?= $errors['image'] ?> </div>
+                    <?php endif; ?>
+                </div>
 
-            <div class="form-group">
-                <label for="alt">Description de la photo</label>
-                <input required class="form-control" type="text"  id="alt"  name="alt" value="<?= $data['alt'] ?? ''?>">
-                <?php if (!empty($errors['alt'])) : ?>
-                    <div class="error text-danger"> <?= $errors['alt'] ?> </div>
-                <?php endif; ?>
-            </div>
+                <div class="form-group">
+                    <label for="alt">Description de la photo</label>
+                    <input required class="form-control" type="text"  id="alt"  name="alt" value="<?= $data['alt'] ?? ''?>">
+                    <?php if (!empty($errors['alt'])) : ?>
+                        <div class="error text-danger"> <?= $errors['alt'] ?> </div>
+                    <?php endif; ?>
+                </div>
 
 
-            <div class="form-group mt-5 text-center">
-                <button type="submit" name="submit" value="submit" class="btn btn-confirm mx-auto btn-lg m-t-3">Envoyer!</button>
-            </div>
-        </form>
+                <div class="form-group mt-5 text-center">
+                    <button type="submit" name="submit" value="submit" class="btn btn-confirm mx-auto btn-lg m-t-3">Envoyer!</button>
+                </div>
+            </form>
+        </div>
     </div>
 
 </section>
