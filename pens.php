@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
 
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CPermanent+Marker%7CRoboto%7CSource+Sans+Pro%7CRaleway" rel="stylesheet">
@@ -18,7 +19,6 @@
 <!-- header -->
 <?php
     $typeOfArticle='Pens';
-/*METTRE A JOUR LE CSS AVEC NOMS DE VARIABLES PERTINENTS*/
     $category = 'pens';
     $titleJumbotron = 'Stylos';
     $textJumbotron = 'Découvrez notre nouvelle gamme de stylos';
