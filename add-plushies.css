@@ -361,7 +361,7 @@ label{
     padding-top: 3%;
 }
 
-.E_titre{
+.E_title{
 
     font-family: Raleway;
     font-size: 40px;
@@ -382,7 +382,7 @@ label{
 }
 
 .successSentence {
-    background-image:  url(https://cdn.pixabay.com/photo/2016/03/11/19/28/fern-1250903_960_720.jpg);
+    background-image:  url(https://i.goopics.net/XOXGq.jpg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     color: #7b643d;
@@ -418,6 +418,7 @@ label{
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease 0s;
     border: none;
+    justify-content: space-around;
 }
 
 .btnSuccess-confirm:hover{

@@ -1,9 +1,10 @@
 <?php
-function cleanForm (array $formData): array
+function cleanForm (array $inputArray): array
 {
-    foreach ($_POST as $key => $value){
+    foreach ($inputArray as $key => $value){
         $data[$key] = trim($value);
     }
     return $data;
 }
 ?>
+

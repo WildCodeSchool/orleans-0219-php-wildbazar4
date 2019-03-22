@@ -1,11 +1,11 @@
 <?php
-require "../orleans-0219-php-wildbazar4/cleanform.php";
+require 'cleanform.php';
 
 $errors = [];
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
-    $data = cleanForm ($_POST);
+
 
     if (empty($_POST['plushName'])) {
         $errors['plushNameEmpty'] = "Entrez un nom, s'il vous plait!";
@@ -46,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 ?>
 
 <!DOCTYPE HTML>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -60,13 +60,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 <body>
 
 <header>
+
     <?php
     $category = 'plushiesjumbotron';
-    $jumbotronH1 = 'Peluches';
-    $jumbotronP = 'Tout un monde de douceur!';
-    include 'header.php';
+    $titleJumbotron = 'Peluches';
+    $textJumbotron = 'Tout un monde de douceur!';
+    require 'header.php';
     ?>
-    <h2 class="E_titre">PELUCHES</h2>
+    <h2 class="E_title">PELUCHES</h2>
 </header>
 
 
@@ -80,57 +81,63 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             <div class="card-body">
                 <div class="container">
                     <form class="form" method="Post" target="#">
+
                         <div class="form-group plushName">
-
                                 <label for="plushName">Nom de la peluche :</label>
-                            <p><input class="form-control" type="text" style='background-color: #F5F7F7;' id="plushName" name="plushName" placeholder="nom..." required></p>
-
-                            <p class="text-danger"><?php if(isset($errors["plushNameEmpty"])) echo $errors['plushNameEmpty']?><?php if(isset($errors["plushNameMaxStrenghtLenght"])) echo $errors['plushNameMaxStrenghtLenght'];?></p>
+                            <p><input class="form-control" type="text" style='background-color: #F5F7F7;' id="plushName" name="plushName" placeholder="nom..."></p>
+                            <p class="text-danger"><?php if(isset($errors["plushNameEmpty"])) echo $errors['plushNameEmpty']?>
+                                <?php if(isset($errors["plushNameMaxStrenghtLenght"])) echo $errors['plushNameMaxStrenghtLenght'];?></p>
                         </div>
 
                         <div class="form-group plushPrice">
-
                                 <label for="plushPrice">Prix :</label>
-                            <p><input class="form-control" type="text" style='background-color: #F5F7F7;' id="plushPrice" name="plushPrice" placeholder="0.00€..." required></p>
-
+                            <p><input class="form-control" type="text" style='background-color: #F5F7F7;' id="plushPrice" name="plushPrice" placeholder="0.00€..."></p>
                             <p class="text-danger"><?php if(isset($errors["plushPriceEmpty"])) echo $errors['plushPriceEmpty'];?></p>
                         </div>
 
                         <div class="form-group plushDescription">
-
                                 <label for="plushDescription">Description :</label>
-                                <textarea class="form-control" id="plushDescription" style='background-color: #F5F7F7;' name="plushDescription" rows="3" placeholder="description..." required></textarea>
-
-                            <p class="text-danger"><?php if(isset($errors["plushDescriptionEmpty"])) echo $errors['plushDescriptionEmpty'];?><?php if(isset($errors['plushDescriptionMaxStrenghtLenght'])) echo $errors['plushDescriptionMaxStrenghtLenght'];?></p>
+                                <textarea class="form-control" id="plushDescription" style='background-color: #F5F7F7;' name="plushDescription" rows="3" placeholder="description..."></textarea>
+                            <p class="text-danger"><?php if(isset($errors["plushDescriptionEmpty"])) echo $errors['plushDescriptionEmpty'];?>
+                                <?php if(isset($errors['plushDescriptionMaxStrenghtLenght'])) echo $errors['plushDescriptionMaxStrenghtLenght'];?></p>
                         </div>
 
                         <div class="form-group plushSize">
-
                                 <label for="plushSize">Taille :</label>
-                                <input class="form-control" type="text" id="plushSize" style='background-color: #F5F7F7;' name="plushSize" placeholder="cm..." required>
-
-                            <p class="text-danger"><?php if(isset($errors["plushSizeEmpty"])) echo $errors['plushSizeEmpty'];?><?php if(isset($errors['plushSizeMaxStrenghtLenght'])) echo $errors['plushSizeMaxStrenghtLenght'];?></p>
+                                <input class="form-control" type="text" id="plushSize" style='background-color: #F5F7F7;' name="plushSize" placeholder="cm...">
+                            <p class="text-danger"><?php if(isset($errors["plushSizeEmpty"])) echo $errors['plushSizeEmpty'];?>
+                                <?php if(isset($errors['plushSizeMaxStrenghtLenght'])) echo $errors['plushSizeMaxStrenghtLenght'];?></p>
                         </div>
 
                         <div class="form-group plushColor">
-
-                                <label for="plushColor"></label>
-                                <select class="plushColor" id="plushColor" style='background-color: #F5F7F7;' name="plushColor" required>
-                                    <option selected>Couleurs...</option>
-                                    <option value="blanc">blanc</option>
-                                    <option value="jaune">jaune</option>
-                                    <option value="vert">vert</option>
-                                    <option value="bleu">bleu</option>
-                                    <option value="violet">violet</option>
-                                    <option value="rouge">rouge</option>
-                                    <option value="orange">orange</option>
-                                    <option value="marron">marron</option>
-                                </select>
-
-                            <p class="text-danger"><?php if(isset($errors["plushColorEmpty"])) echo $errors['plushColorEmpty'];?></p>
-                        </div>
-                        <div class="form-group button">
+                            <label for="plushColor"></label>
+                            <select class="plushColor" id="plushColor" style='background-color: #F5F7F7;' name="plushColor">
+                                <option selected>Couleurs...</option>
+                                <option value="blanc">blanc</option>
+                                <option value="jaune">jaune</option>
+                                <option value="vert">vert</option>
+                                <option value="bleu">bleu</option>
+                                <option value="violet">violet</option>
+                                <option value="rouge">rouge</option>
+                                <option value="orange">orange</option>
+                                <option value="marron">marron</option>
+                            </select>
+                            <label for="plushQuantity"></label>
+                            <select class="plushQuantity" id="plushQuantity" style='background-color: #F5F7F7;' name="plushQuantity">
+                                <option selected>Quantités...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
                             <button type="submit" class="btn btnSuccess-confirm mx-auto btn-lg m-t-3" name="submit">envoyer!</button>
+                            <p class="text-danger"><?php if(isset($errors["plushColorEmpty"])) echo $errors['plushColorEmpty'];?></p>
                         </div>
 
                     </form>
@@ -139,7 +146,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         </div>
     </div>
 </div>
-
 </body>
 <footer>
     <?php include 'footer.php'?>

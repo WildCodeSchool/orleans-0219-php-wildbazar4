@@ -241,7 +241,7 @@ pour les petites fées. Ses couleurs sont hyper tendances et toutes douces. Ce c
         'buttons' => ['Quantité:' =>['1' , '2' , '3'],],],
 
 
-    ['name' => 'BarnabéEtEléanore' ,'photo' =>'e10.jpg', 'price' => '53.99' , 'altAtribute'=>'Peluche','description' => 'Pour tous les petits cœurs... Un peu écorchés, abîmés, 
+    ['name' => 'Famille sweet bears' ,'photo' =>'e10.jpg', 'price' => '53.99' , 'altAtribute'=>'Peluche','description' => 'Pour tous les petits cœurs... Un peu écorchés, abîmés, 
      fatigués ou en bonne santé... Ces doudous sont fait pour apporter de la douceur et du réconfort à son propriétaire. 
      Cadeau de naissance idéal et original. Edition Limitée',
         'caracteristics'=> ['Taille :' => '15 et 12cm', 'Couleur : ' => 'marron avec stétoscope et gris avec des pansements'],

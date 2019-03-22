@@ -14,9 +14,9 @@
 <header>
     <?php
     $category = 'plushiesjumbotron';
-    $jumbotronH1 = 'Peluches';
-    $jumbotronP = 'Tout un monde de douceur!';
-    include 'header.php';
+    $titleJumbotron = 'Peluches';
+    $textJumbotron = 'Tout un monde de douceur!';
+    require 'header.php';
     ?>
 </header>
 <body>
