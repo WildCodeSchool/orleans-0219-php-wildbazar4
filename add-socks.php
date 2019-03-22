@@ -13,135 +13,110 @@
 
 <body>
 <!-- header -->
-
 <?php
-
-?>
-<?php
+    $pairSocks = [];
     $category = 'socks';
     $titleJumbotron = 'Chaussettes';
     $textJumbotron = 'Ajoutez vos chaussettes ici';
     include 'header.php';
+    include 'function.php';
+    $data = cleanArray($_POST);
 
-    // define variables and set to empty values
-    $nameErr = $priceErr = $descriptionErr = $clothErr = $availableErr = $imageErr = $altErr = "";
-    $name = $price = $description = $quantity = $cloth = $available = $image = $alt = "";
-    $errorCount = 0;
-    $emptyField = 'Le champ ne peut pas être vide';
+    $errors = [];
+    $pairSocks = ['one' => '1 paire','two' => 'Lot de 2 paires','three' => 'Lot de 3 paires','four' => 'Lot de 4 paires','five' => 'Lot de 5 paires'];
+    $emptyField = 'Le champ ne peut pas être vide.';
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        var_dump($_POST);
+        $maxLengthName = 100;
+        $maxDefault = 255;
 
-        $quantity = ($_POST["quantity"]);
-
-        if (empty($_POST["name"])){
-            $nameErr = $emptyField;
-            $errorCount++;
-        } elseif ((strlen($_POST["name"]) > 255)) {
-            $nameErr = "Votre nom de produit est trop long.";
-            $errorCount++;
-        } else {
-            $name = test_input($_POST["name"]);
+        if (empty($data["name"])){
+            $errors['name'] = $emptyField;
+        } elseif ((strlen($data['name']) > $maxLengthName)) {
+            $errors['name'] = 'Votre nom de produit ne peut pas être supérieur à ' . $maxLengthName . 'caractères';
         }
 
-        if (empty($_POST["price"])) {
-            $priceErr = $emptyField;
-            $errorCount++;
-        } elseif (!is_numeric($_POST["price"])) {
-            $priceErr = "Vous ne pouvez entrez que des chiffres.";
-            $errorCount++;
-        } else {
-            $price = test_input($_POST["price"]);
+        if (empty($data['price'])) {
+            $errors['price'] = $emptyField;
+        } elseif (!is_numeric($data['price'])) {
+            $errors['price'] = "Vous ne pouvez entrer que des chiffres.";
         }
 
-        if (empty($_POST["description"])) {
-            $descriptionErr = $emptyField;
-            $errorCount++;
-        } elseif ((strlen($_POST["description"]) > 255)) {
-            $descriptionErr = "Votre description est trop longue.";
-            $errorCount++;
-        } else {
-            $description = test_input($_POST["description"]);
+        if (empty($data['description'])) {
+            $errors['description'] = $emptyField;
+        } elseif ((strlen($data['description']) > $maxDefault)) {
+            $errors['description'] = 'Votre description ne peut pas être supérieure à ' . $maxDefault . 'caractères';
         }
 
-        if (empty($_POST["cloth"])) {
-            $clothErr = $emptyField;
-            $errorCount++;
-        } elseif ((strlen($_POST["cloth"]) > 255)) {
-            $clothErr = "Votre description est trop longue.";
-            $errorCount++;
-        } else {
-            $cloth = test_input($_POST["cloth"]);
+        if (empty($data['cloth'])) {
+            $errors['cloth'] = $emptyField;
+        } elseif ((strlen($data['cloth']) > 255)) {
+            $errors['cloth'] = 'Votre description ne peut pas être supérieure à ' . $maxDefault . 'caractères';
         }
 
-        if (empty($_POST["available"])) {
-            $availableErr = $emptyField;
-            $errorCount++;
-        } elseif ((strlen($_POST["available"]) > 255)) {
-            $availableErr = "Votre texte est trop long.";
-            $errorCount++;
-        } else {
-            $available = test_input($_POST["available"]);
+        if (empty($data['available'])) {
+            $errors['available'] = $emptyField;
+        } elseif ((strlen($data['available']) > 255)) {
+            $errors['available'] = 'Votre texte ne peut pas être supérieur à ' . $maxDefault . 'caractères';
         }
 
-        if (empty($_POST["image"])) {
-            $imageErr = $emptyField;
-            $errorCount++;
-        } elseif ((strlen($_POST["image"]) > 255)) {
-            $imageErr = "Le nom de votre image est trop long.";
-            $errorCount++;
-        } else {
-            $image = test_input($_POST["image"]);
+        if (empty($data['image'])) {
+            $errors['image'] =  $emptyField;
+        } elseif ((strlen($data['image']) > 255)) {
+            $errors['image'] = 'Le nom de votre image ne peut pas être supérieur à ' . $maxDefault . 'caractères';
         }
 
-        if (empty($_POST["alt"])) {
-            $altErr = $emptyField;
-            $errorCount++;
-        } elseif ((strlen($_POST["alt"]) > 255)) {
-            $altErr = "La description de votre image est trop longue.";
-            $errorCount++;
-        } else {
-            $alt = test_input($_POST["alt"]);
+        if (empty($data['alt'])) {
+            $errors['alt'] =  $emptyField;
+        } elseif ((strlen($data['alt']) > 255)) {
+            $errors['alt']  = 'Le description de votre image ne peut pas être supérieure à ' . $maxDefault . 'caractères';
         }
 
+        if (!in_array($data['pairSocks'], $numberPair)) {
+            $errors['pairSocks'] = 'La valeur doit faire partie de la liste';
+        }
 
-        if(isset($_POST['submit']) && $errorCount == 0){
-            header( "Location: add-socks.php");
+        if(isset($_POST['submit']) && empty($errors)){
+            header("Location: add-socks.php");
         }
     }
 
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
+
 
 ?>
-<section class="container-fluid">
+<section class="container">
     <div class="justify-content-center" >
         <h2>Ajouter des chaussettes</h2>
         <form method="POST" action="add-socks.php" >
-            <div>
+            <div class="form-group">
                 <label for="name">Nom du produit</label>
-                <input type="text"  id="name"  name="name" value="<?php echo $name;?>">
-                <span class="error">* <?php echo $nameErr;?></span>
+                <input  class="form-control" type="text"  id="name"  name="name" value="<?php echo $data['name'];?>">
+                <?php if (!empty($errors['name'])) : ?>
+                <div class="error text-danger"> <?= $errors['name'] ?> </div>
+                <?php endif; ?>
+
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="price">Prix du produit</label>
-                <input type="number" step="0.01" id="price" name="price" value="<?php echo $price;?>">
-                <span class="error">* <?php echo $priceErr;?></span>
+                <input  class="form-control" type="number" step="0.01" id="price" name="price" value="<?php echo $data['price'];?>">
+                <?php if (!empty($errors['price'])) : ?>
+                    <div class="error text-danger"> <?= $errors['price'] ?> </div>
+                <?php endif; ?>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="description">Description du produit</label>
-                <textarea id="description" name="description"><?php echo $description;?></textarea>
-                <span class="error">* <?php echo $descriptionErr;?></span>
+                <textarea class="form-control" id="description" name="description"><?php echo $data['description'];?></textarea>
+                <?php if (!empty($errors['description'])) : ?>
+                    <div class="error text-danger"> <?= $errors['description'] ?> </div>
+                <?php endif; ?>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="quantity">Lot</label>
-                <select id="quantity" name="quantity" value="<?php echo $quantity;?>">
+                <select  class="form-control"  id="quantity" name="quantity" value="<?php echo $data['quantity'];?>">
                     <option value="socks-quantity-one">1 paire</option>
                     <option value="socks-quantity-two">Lot de 2 paires</option>
                     <option value="socks-quantity-three">Lot de 3 paires</option>
@@ -150,27 +125,35 @@
                     <span>*</span>
                 </select>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="cloth">Matière</label>
-                <input type="text"  id="cloth"  name="cloth" value="<?php echo $cloth;?>">
-                <span class="error">* <?php echo $clothErr;?></span>
+                <input class="form-control" type="text"  id="cloth"  name="cloth" value="<?php echo $data['cloth'];?>">
+                <?php if (!empty($errors['cloth'])) : ?>
+                    <div class="error text-danger"> <?= $errors['cloth'] ?> </div>
+                <?php endif; ?>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="available">Disponibilité</label>
-                <input type="text"  id="available"  name="available" value="<?php echo $available;?>">
-                <span class="error">* <?php echo $availableErr;?></span>
+                <input class="form-control" type="text"  id="available"  name="available" value="<?php echo $data['available'];?>">
+                <?php if (!empty($errors['available'])) : ?>
+                    <div class="error text-danger"> <?= $errors['available'] ?> </div>
+                <?php endif; ?>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="image">Photo</label>
-                <input type="text"  id="image"  name="image" value="<?php echo $image;?>">
-                <span class="error">* <?php echo $imageErr;?></span>
+                <input class="form-control" type="text"  id="image"  name="image" value="<?php echo $data['image'];?>">
+                <?php if (!empty($errors['image'])) : ?>
+                    <div class="error text-danger"> <?= $errors['image'] ?> </div>
+                <?php endif; ?>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="alt">Description de la photo</label>
-                <input type="text"  id="alt"  name="alt" value="<?php echo $alt;?>">
-                <span class="error">* <?php echo $altErr;?></span>
+                <input class="form-control" type="text"  id="alt"  name="alt" value="<?php echo $data['alt'];?>">
+                <?php if (!empty($errors['alt'])) : ?>
+                    <div class="error text-danger"> <?= $errors['alt'] ?> </div>
+                <?php endif; ?>
             </div>
 
 
