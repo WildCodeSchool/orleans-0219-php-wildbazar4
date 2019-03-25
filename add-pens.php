@@ -23,11 +23,12 @@ $textJumbotron = 'Découvrez notre nouvelle gamme de stylos';
 ?>
 <?php include 'header.php' ?>
 <?php
-
+require 'function.php';
 $stockagetab = [];
 $colors = ['bleu', 'rouge', 'noir'];
 $errors = [];
 if (isset($_POST['submit'])) {
+    $_POST = cleanArray($_POST);
 
     if (empty($_POST['productName']) || $_POST['productName'] == '') {
         $errors['productName'] = "Nom invalide ";
@@ -80,30 +81,14 @@ if (isset($_POST['submit'])) {
                     <div class="form-group  ">
                         <div class="row">
                             <label for="nameProduct">Nom du produit</label>
-                            <input type="text" class="form-control" id="nameProduct" name="productName"
-                                   value="<?php if (isset($_POST['productName'])) {
-                                       echo $_POST['productName'];
-                                   } ?>">
-
+                            <input type="text" class="form-control" id="nameProduct" name="productName" value="<?php if (isset($_POST['productName'])) {echo $_POST['productName'];} ?>">
                             <?php if (!empty($errors['productName'])): ?>
                                 <div class="text-danger sizeFont">
                                     <?= $errors['productName']; ?>
                                 </div>
                             <?php endif; ?>
-
                         </div>
                     </div>
-
-            <div class="form-group row">
-                <label for="photo">Nom photo produit</label>
-                <input type="text" class="form-control mb-2" id="photo" name="photoName">
-                <?php if (!empty($errors['photoName'])): ?>
-                    <div class="text-danger sizeFont">
-                        <?= $errors['photoName']; ?>
-                    </div>
-                <?php endif; ?>
-            </div>
-
             <div class="form-group row  ">
                 <label for="Attribute">Description photo</label>
                 <input type="text" class="form-control " id="Attribute" name="altAttribute">
