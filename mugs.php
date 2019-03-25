@@ -20,7 +20,7 @@
 <?php
 $typeOfArticle='Mugs';
 
-$category = 'mugs';
+    $category = 'mugs';
     $titleJumbotron = 'Mugs';
     $textJumbotron = 'Trouvez le mug de vos rêves!';
     $linkJumbotron = 'addmug.php';

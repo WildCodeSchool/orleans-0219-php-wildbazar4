@@ -352,7 +352,7 @@ p.ytxt{
   background-image:  url('../images/bg-about-us.jpg');
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-   font-size: 6vw;
+   font-size: 5vw;
   font-family: Raleway;
   animation: filling 3s ease forwards;
   text-align: center;
