@@ -73,9 +73,11 @@
       </div>
       <div class="row">
         <img class="col-sm-3 offset-1" src="images/about-us.jpg" alt="About us">
-        <p class="col-sm-7 offset-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis assumenda.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis assumenda.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, officia quae facere ad nulla quidem incidunt exercitationem sed excepturi culpa commodi debitis consequatur aperiam accusantium quaerat, laboriosam blanditiis assumenda.</p>
+        <p class="col-sm-7 offset-1 ">C'est une équipe de quatre personnes qui se sont retrouvées sur un projet commun...un site internet de commerce en ligne!
+            vous allez me dire, mais comment ça? des gens, comme ça, qui font un site, c'est n'importe quoi!!
+            mais quoi, ils en avaient déjà fait? non??? mais comment ont-ils fait alors?
+            grâce à leur soif d'apprendre, de comprendre, grâce à la passion qui les animent tous!
+            Mais c'est qui ces gus? c'est nous, Yacine, Solène, André et Emilie.</p>
       </div>
     </section>
   </div>
