@@ -25,6 +25,7 @@ foreach ($tableToDestroy as $items){
     return($tableToDestroy);
 }}
 
+require 'function.php';
 
 
 $category = 'mugs';
@@ -35,94 +36,88 @@ $data=[];
 $errors=[];
 $globalData=[];
 
-include 'header.php';
+require 'header.php';
 ?>
 
 
 <!--Machinerie formulaire-->
 <?php if ($_POST){
-
-  foreach ($_POST as $trucs){
-  $trucs=trim($trucs);
-  $trucs=strip_tags($trucs);
-  }
-  ;
+  cleanArray($_POST);
 
 
 
 
-  if(strlen($_POST['productName'])>2 && strlen($_POST['productName'])<255){
-    $data['productName']=strip_tags($_POST['productName']);
-    $data['productName']=trim($data['productName']);
+  if(strlen($_POST['productName'])<255){
+    $data['productName']=($_POST['productName']);
+
 
   }
   else{
-    $errors['productName']=strip_tags($_POST['productName']);
-    $errors['productName']=trim($errors['productName']);
+    $errors['productName']=($_POST['productName']);
+
       $errorMessage['productName']='<div class="text-danger">Le nom de votre produit doit contenir au moins 3 caractères, mais moins de 255</div>';
   }
 
     if(is_numeric($_POST['productPrice'])&& 0<$_POST['productPrice']){
-        $data['productPrice']=strip_tags($_POST['productPrice']);
-        $data['productPrice']=trim($data['productPrice']);
+        $data['productPrice']=($_POST['productPrice']);
+
     }
     else{
-        $errors['productPrice']=strip_tags($_POST['productPrice']);
-        $errors['productPrice']=trim($errors['productPrice']);
+        $errors['productPrice']=($_POST['productPrice']);
+
         $errorMessage['productPrice']='<div class="text-danger">Le prix de votre produit ne peut pas être inférieur à 0, ou contenir des caractères autres que 1 2 3 4 5 6 7 8 9 ,</div>';
     }
 
-    if(strlen($_POST['photoName'])>1&& strlen($_POST['productName'])<255){
-        $data['photoName']=strip_tags($_POST['photoName']);
-        $data['photoName']=trim($data['photoName']);
+    if(strlen($_POST['photoName'])>0&& strlen($_POST['productName'])<255){
+        $data['photoName']=($_POST['photoName']);
+
     }
     else{
-        $errors['photoName']=strip_tags($_POST['photoName']);
-        $errors['photoName']=trim($errors['photoName']);
-        $errorMessage['photoName']='<div class="text-danger">Le nom de votre photo doit faire au moins deux caractères, et moins de 255</div>';
+        $errors['photoName']=($_POST['photoName']);
+
+        $errorMessage['photoName']='<div class="text-danger">Le nom de votre photo doit être compris entre 1 et 255 caractères</div>';
     }
 
 
-    if(strlen($_POST['altAttribute'])>5 && strlen($_POST['productName'])<255){
-      $data['altAttribute']=strip_tags($_POST['altAttribute']);
-        $data['altAttribute']=trim($data['altAttribute']);
+    if(strlen($_POST['altAttribute'])>0 && strlen($_POST['productName'])<255){
+      $data['altAttribute']=($_POST['altAttribute']);
+
     }
     else{
-      $errors['altAttribute']=strip_tags($_POST['altAttribute']);
-        $errors['altAttribute']=trim($errors['altAttribute']);
-      $errorMessage['altAttribute']='<div class="text-danger">Au moins 5 caractères, mais moins de 255!</div>';
+      $errors['altAttribute']=($_POST['altAttribute']);
+      $errorMessage['altAttribute']='<div class="text-danger">La description doit être remplie et faire moins de 255 caractères!</div>';
     }
 
-    if(strlen($_POST['productDescription'])>5 && strlen($_POST['productDescription'])<255){
-        $data['productDescription']=strip_tags($_POST['productDescription']);
+    if(strlen($_POST['productDescription'])>0 && strlen($_POST['productDescription'])<255){
+        $data['productDescription']=($_POST['productDescription']);
     }
     else{
-        $errors['productDescription']=strip_tags($_POST['productDescription']);
-        $errorMessage['productDescription']='<div class="text-danger">Au moins 5 caractères, mais moins de 255!</div>';
+        $errors['productDescription']=($_POST['productDescription']);
+        $errorMessage['productDescription']='<div class="text-danger">La description doit être remplie et faire moins de 255 caractères!</div>';
     }
 
     if(strlen($_POST['productRange'])>3 && strlen($_POST['productRange'])<255){
-        $data['productRange']=strip_tags($_POST['productRange']);
+        $data['productRange']=($_POST['productRange']);
     }
     else{
-        $errors['productRange']=strip_tags($_POST['productRange']);
+        $errors['productRange']=($_POST['productRange']);
         $errorMessage['productRange']='<div class="text-danger">Choisissez!</div>';
     }
 
 
     if(strlen($_POST['productDrink'])>3 && strlen($_POST['productDrink'])<255){
-        $data['productDrink']=strip_tags($_POST['productDrink']);
+        $data['productDrink']=($_POST['productDrink']);
     }
     else{
-        $errors['productDrink']=strip_tags($_POST['productDrink']);
+        $errors['productDrink']=($_POST['productDrink']);
         $errorMessage['productDrink']='<div class="text-danger">Choisissez!</div>';
     }
 
     if(strlen($_POST['productSize'])>3 && strlen($_POST['productSize'])<255){
-        $data['productSize']=strip_tags($_POST['productSize']);
+        $data['productSize']=($_POST['productSize']);
     }
     else{
-        $errors['productSize']=strip_tags($_POST['productSize']);
+        $errors['productSize']=($_POST['productSize']);
         $errorMessage['productSize']='<div class="text-danger">Choisissez! </div>';
     }
 
