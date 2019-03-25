@@ -117,7 +117,7 @@ $drink = ['Café', 'Thé', 'Lait'];
         <div>
           <label for="productName">Nom du produit:</label>
           <input type="text" class="form-control mb-2" id="productName" name='productName'
-                 placeholder="Mug électronique" value="<?= $data['productName'] ?? '' ?>">
+                 placeholder="Mug électronique" value="<?= $data['productName'] ?? '' ?>" required>
 
             <?= $errorMessage['productName'] ?? '' ?>
 
@@ -125,7 +125,7 @@ $drink = ['Café', 'Thé', 'Lait'];
         <div>
           <label for="productPrice">Prix (Ne pas ajouter la devise):</label>
           <input type="number" step="0.01" class="form-control mb-2" id="productPrice" name="productPrice"
-                 placeholder="12,32" value="<?= $data['productPrice'] ?? ''; ?>">
+                 placeholder="12,32" value="<?= $data['productPrice'] ?? ''; ?>" required>
             <?= $errorMessage['productPrice'] ?? '' ?>
 
         </div>
@@ -134,14 +134,14 @@ $drink = ['Café', 'Thé', 'Lait'];
 
       <label for="photoName">Nom photo produit</label>
       <input type="text" class="form-control mb-2" id="photoName" name="photoName" placeholder="exemple: a14.jpg"
-             value="<?= $data['photoName'] ?? ''; ?>">
+             value="<?= $data['photoName'] ?? ''; ?>" required>
 
         <?= $errorMessage['photoName'] ?? '' ?>
 
 
       <label for="altAttribute">Description photo:</label>
       <input type="text" class="form-control mb-2" id="altAttribute" name="altAttribute"
-             placeholder="Exemple: mug vert et rouge en forme de cône." value="<?= $data['altAttribute'] ?? '' ?>">
+             placeholder="Exemple: mug vert et rouge en forme de cône." value="<?= $data['altAttribute'] ?? '' ?>" required>
 
         <?= $errorMessage['altAttribute'] ?? '' ?>
 
@@ -149,7 +149,7 @@ $drink = ['Café', 'Thé', 'Lait'];
       <div class="form-group">
         <label for="productDescription">Description du produit</label>
         <textarea class="form-control" id="productDescription" name="productDescription" rows="3"
-                  placeholder="255 caractères maximum"><?= $data['productDescription'] ?? '' ?></textarea>
+                  placeholder="255 caractères maximum" required><?= $data['productDescription'] ?? '' ?></textarea>
           <?= $errorMessage['productDescription'] ?? '' ?>
       </div>
 
@@ -158,7 +158,7 @@ $drink = ['Café', 'Thé', 'Lait'];
         <div class="row">
           <div class="col-4">
             <label for="productRange">Gamme</label>
-            <select class="form-control" id="productRange" name="productRange">
+            <select class="form-control" id="productRange" name="productRange" required>
               <option></option>
                 <?php foreach ($range as $item) {
                     if ($item == $data['productRange']) {
@@ -176,7 +176,7 @@ $drink = ['Café', 'Thé', 'Lait'];
           </div>
           <div class="col-4">
             <label for="productSize">Taille</label>
-            <select class="form-control" id="productSize" name="productSize">
+            <select class="form-control" id="productSize" name="productSize" required>
               <option></option>
                 <?php foreach ($size as $item) {
                     if ($item == $data['productSize']) {
@@ -194,7 +194,7 @@ $drink = ['Café', 'Thé', 'Lait'];
 
           <div class="col-4">
             <label for="productDrink">Boisson</label>
-            <select class="form-control" id="productDrink" name="productDrink">
+            <select class="form-control" id="productDrink" name="productDrink" required>
               <option></option>
                 <?php foreach ($drink as $item) {
                     if ($item == $data['productDrink']) {
