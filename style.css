@@ -337,3 +337,24 @@ p.ytxt{
   border: none;
   box-shadow: 0px 15px 20px rgba(181, 152, 90, 0.4);
 }
+
+/*PAGE SUCCES*/
+@keyframes filling {
+  from{
+    background-position: center 25%;
+  }
+  to {
+    background-position: center 50%;
+  }
+}
+
+.successSentence {
+  background-image:  url('../images/bg-about-us.jpg');
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+   font-size: 6vw;
+  font-family: Raleway;
+  animation: filling 3s ease forwards;
+  text-align: center;
+  font-weight: bold;}
+

@@ -19,11 +19,6 @@
 <body>
 <!-- header -->
 <?php
-function destroyQuiteAll($tableToDestroy){
-foreach ($tableToDestroy as $items){
-    unset($items);
-    return($tableToDestroy);
-}}
 
 require 'function.php';
 
@@ -123,17 +118,15 @@ require 'header.php';
 
 }
       if ((count($data) >= 5) && (count($errors) < 1)&&($_POST)) {
-       /* header('location:add-mugs.php');*/
-          $title="Vous venez d'a";
+        header('location:add-mugs-success.php');
 
 
-          var_dump($data);
+
+
 
 
       }
-      else{
-      $title='A';
-      };
+
 
 /*Machinerie selected*/
 $range=['Luxe', 'Standard', 'Basique'];
@@ -157,7 +150,7 @@ $drink=['Café', 'Thé', 'Lait'];
 
 
 <section class="container-fluid justify-content-center">
-  <h2> <?=$title?>jouter un mug !</h2>
+  <h2>Ajouter un mug !</h2>
   <div class="row justify-content-center">
 <!--AJOUTER VALUE= VAR-->
 
