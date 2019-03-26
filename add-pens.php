@@ -27,8 +27,8 @@ require 'function.php';
 $stockagetab = [];
 $colors = ['bleu', 'rouge', 'noir'];
 $errors = [];
-if (isset($_POST['submit'])) {
-    $_POST = cleanArray($_POST);
+if ($_POST) {
+  cleanArray($_POST);
 
     if (empty($_POST['productName']) || $_POST['productName'] == '') {
         $errors['productName'] = "Nom invalide ";
@@ -184,7 +184,7 @@ if (isset($_POST['submit'])) {
 
 
                             <div class="row justify-content-center">
-                                <button type="submit" name="submit" class="btn btn-confirm mx-auto btn-lg m-t-3">
+                                <button type="submit" class="btn btn-confirm mx-auto btn-lg m-t-3">
                                     Envoyer!
                                 </button>
 
