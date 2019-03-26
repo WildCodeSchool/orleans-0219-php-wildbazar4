@@ -8,3 +8,4 @@ function cleanArray(array $inputArray): array
     }
     return $data ;
 }
+
