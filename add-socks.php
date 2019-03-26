@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <form method="POST" action="add-socks.php">
         <div class="form-group">
           <label for="name">Nom du produit</label>
-          <input required class="form-control" type="text" id="name" name="name" value="<?= $data['name'] ?? '' ?>">
+          <input required class="form-control" type="text" id="name" name="name" placeholder="Insérez le nom du produit" value="<?= $data['name'] ?? '' ?>">
             <?php if (!empty($errors['name'])) : ?>
               <div class="error text-danger"> <?= $errors['name'] ?> </div>
             <?php endif; ?>
@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="form-group">
           <label for="price">Prix du produit</label>
-          <input required class="form-control" type="number" step="0.01" id="price" name="price"
+          <input required class="form-control" type="number" step="0.01" id="price" name="price" placeholder="Insérez le prix du produit"
                  value="<?= $data['price'] ?? '' ?>">
             <?php if (!empty($errors['price'])) : ?>
               <div class="error text-danger"> <?= $errors['price'] ?> </div>
@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="form-group">
           <label for="description">Description du produit</label>
-          <textarea required class="form-control" id="description"
+          <textarea required class="form-control" id="description" placeholder="Insérez la description du produit"
                     name="description"><?= $data['description'] ?? '' ?></textarea>
             <?php if (!empty($errors['description'])) : ?>
               <div class="error text-danger"> <?= $errors['description'] ?> </div>
@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="form-group">
           <label for="pairSocks">Lot</label>
-          <select required class="form-control custom-select" id="pairSocks" name="pairSocks">
+          <select required class="form-control custom-select" id="pairSocks" name="pairSocks" >
             <option value="">Nombre de paires</option>
               <?php foreach ($pairSocks as $labelPair => $numberPair) : ?>
                 <option value="<?= $numberPair ?>"
@@ -119,14 +119,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
         <div class="form-group">
           <label for="cloth">Matière</label>
-          <input required class="form-control" type="text" id="cloth" name="cloth" value="<?= $data['cloth'] ?? '' ?>">
+          <input required class="form-control" type="text" id="cloth" name="cloth" placeholder="Insérez la matière du produit" value="<?= $data['cloth'] ?? '' ?>">
             <?php if (!empty($errors['cloth'])) : ?>
               <div class="error text-danger"> <?= $errors['cloth'] ?> </div>
             <?php endif; ?>
         </div>
         <div class="form-group">
           <label for="available">Disponibilité</label>
-          <input required class="form-control " type="text" id="available" name="available"
+          <input required class="form-control " type="text" id="available" name="available" placeholder="Dites si le produit est disponible"
                  value="<?= $data['available'] ?? '' ?>">
             <?php if (!empty($errors['available'])) : ?>
               <div class="error text-danger"> <?= $errors['available'] ?> </div>
@@ -135,7 +135,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="form-group">
           <label for="image">Photo</label>
-          <input required class="form-control" type="text" id="image" name="image" value="<?= $data['image'] ?? '' ?>">
+          <input required class="form-control" type="text" id="image" name="image" placeholder="Insérez le lien de la photo" value="<?= $data['image'] ?? '' ?>">
             <?php if (!empty($errors['image'])) : ?>
               <div class="error text-danger"> <?= $errors['image'] ?> </div>
             <?php endif; ?>
@@ -143,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="form-group">
           <label for="alt">Description de la photo</label>
-          <input required class="form-control" type="text" id="alt" name="alt" value="<?= $data['alt'] ?? '' ?>">
+          <input required class="form-control" type="text" id="alt" name="alt" placeholder="Insérez la description de la photo" value="<?= $data['alt'] ?? '' ?>">
             <?php if (!empty($errors['alt'])) : ?>
               <div class="error text-danger"> <?= $errors['alt'] ?> </div>
             <?php endif; ?>
