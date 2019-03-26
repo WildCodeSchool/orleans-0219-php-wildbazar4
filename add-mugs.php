@@ -18,9 +18,19 @@ require 'function.php';
 
 
 <!--Machinerie formulaire-->
+
 <?php if ($_POST) {
     cleanArray($_POST);
 
+/*MACHINERIE BOUCLE*/
+foreach ($_POST as $nameCategory=>$category){
+
+    $data[$nameCategory]=$_POST[$nameCategory];
+
+  }
+    var_dump($data) ;
+
+  /*FIN MACHINERIE BOUCLE*/
 
     if (strlen($_POST['productName']) < 255) {
         $data['productName'] = ($_POST['productName']);
@@ -117,7 +127,7 @@ $drink = ['Café', 'Thé', 'Lait'];
         <div>
           <label for="productName">Nom du produit:</label>
           <input type="text" class="form-control mb-2" id="productName" name='productName'
-                 placeholder="Mug électronique" value="<?= $data['productName'] ?? '' ?>" required>
+                 placeholder="Mug électronique" value="<?= $data['productName'] ?? '' ?>" >
 
             <?= $errorMessage['productName'] ?? '' ?>
 
