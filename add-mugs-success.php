@@ -1,9 +1,151 @@
-    <?php
+<?php
 
-    $category = 'mugs';
-    $titleJumbotron = 'Mugs';
-    $textJumbotron = 'Ajoutez le mug de vos rêves!';
-    require 'head-success.php';
-    require 'header.php';
-    require 'success.php';
-    ?>
+$category = 'mugs';
+$titleJumbotron = 'Mugs';
+$textJumbotron = 'Ajoutez le mug de vos rêves!';
+?>
+
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CPermanent+Marker%7CRoboto%7CSource+Sans+Pro%7CRaleway"
+        rel="stylesheet">
+  <title>add-<?= $category ?>-success</title>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="logo"> Wild Bazar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="pens.php"><span class="ycat">Stylos</span><span class="ybar ml-3">|</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="plushies.php"><span class="ycat">Peluches</span><span class="ybar ml-3">|</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mugs.php"><span class="ycat">Mugs</span><span class="ybar ml-3">|</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="socks.php" tabindex="-1" aria-disabled="true"><span class="ycat">Chaussettes</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid <?php echo $category ?>">
+    <h1 class="text-center ytxtban"> <?php echo $titleJumbotron ?></h1>
+    <p class="text-center ytxt"> <?php echo $textJumbotron ?></p>
+    <div class="text-center p-4">
+
+      <a class="btn text-center btn-secondary btn-lg" href="add-<?= $category ?>.php" role="button">ADD NEW</a>
+
+    </div>
+
+  </div>
+</header>
+
+
+<p class="successSentence mt-5 mb-5">Votre produit a été ajouté!</p>
+<div class="mt-5 mb-5 text-center">
+  <a href="add-<?= $category ?>.php">
+    <button type="submit" class="btn btn-confirm btn-lg m-t-3 ml-3 mr-3 ">Revenir au formulaire</button>
+  </a>
+  <a href="index.php">
+    <button type="submit" class="btn btn-confirm mx-auto btn-lg m-t-3">Revenir à l'accueil</button>
+  </a>
+</div>
+
+<!--FOOTER-->
+
+<footer>
+  <div class="E_jumbotron jumbotron-fluid">
+    <div class="E_container-fluid container-fluid">
+
+      <!--parts-->
+
+      <div class="row">
+        <div class="E_card col-sm-2">
+          <div class="E_parts">
+            <p class="card-text"><a href="#">Accueil</a></p>
+            <p class="card-text"><a href="#">Notre équipe</a></p>
+            <p class="card-text"><a href="#">Meilleurs ventes</a></p>
+            <p class="card-text"><a href="#">Nous contacter</a></p>
+            <p class="card-text"><a href="#">Mentions légales</a></p>
+          </div>
+        </div> <!--categories-->
+
+        <div class="E_card col-sm-2">
+          <div class="E_parts">
+            <p class="card-text"><a href="pens.php">Stylos</a></p>
+            <p class="card-text"><a href="plushies.php">Peluches</a></p>
+            <p class="card-text"><a href="mugs.php">Mugs</a></p>
+            <p class="card-text"><a href="socks.php">Chaussettes</a></p>
+
+          </div>
+        </div>
+
+        <!--adresse-->
+
+        <div class="E_card col-sm-3">
+          <div class="E_adresse ">
+            <h2 class="card-title">Wild Bazar</h2>
+            <p class="card-text">1, rue de la Paix</p>
+            <p class="card-text">75000 Paris</p>
+            <p class="card-text">01.23.45.67.89</p>
+          </div>
+        </div>
+
+        <!--form-->
+
+        <div class="E_form col-sm-3 offset-1">
+          <form>
+            <div class="E_form-group">
+              <label for="footer">E-mail</label>
+              <input type="email" class="form-control" id="footer" placeholder="nom@exemple.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Commentaires</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-sm-4 offset-5">
+              <button type="submit"
+                      class="btn btn-light align-items-center justify-content-end">Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
