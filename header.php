@@ -1,16 +1,4 @@
-<?php function addButton ($category)
-{
-    return <<<HTML
-        <div class="text-center p-4">
-            <a href="add-{$category}.php">
-                <button type="button" class="text-center btn btn-secondary btn-lg">
-                    ADD NEW
-                </button>
-           </a>
-        </div>
-HTML;
-}
-?>
+<?php require 'function.php';?>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
