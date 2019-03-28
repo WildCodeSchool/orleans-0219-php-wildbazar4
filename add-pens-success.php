@@ -4,7 +4,6 @@ $titleJumbotron = 'Stylos';
 $textJumbotron = 'Découvrez notre nouvelle gamme de stylos';?>
 <!doctype html>
 <html lang="fr">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">

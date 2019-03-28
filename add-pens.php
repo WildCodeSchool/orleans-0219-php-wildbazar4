@@ -1,7 +1,7 @@
-
 <?php
 require 'connec.php';
 $pdo = new PDO(DSN, USER, PASS);
+$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 $query = "INSERT INTO pens (name, photo, alt_attribute, description, price, hight, pod, quantity, colors ) VALUES (:name, :photo, :description, :alt_attribute, :price, :hight, :pod, :quantity, :colors)";
 $statement = $pdo->prepare($query);
 $category = 'pens';
@@ -29,7 +29,6 @@ $textJumbotron = 'Découvrez notre nouvelle gamme de stylos';?>
 <body>
 <?php
 require 'header.php';
-require 'function.php';
 ?>
 <?php
 $colors = ['bleu', 'rouge', 'noir'];
