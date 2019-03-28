@@ -1,7 +1,7 @@
 <?php
 require 'connec.php';
 $pdo = new PDO(DSN, USER, PASS);
-
+$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 $query = "SELECT * FROM pens" ;
 
 $statement = $pdo->query($query);
@@ -33,7 +33,6 @@ $textJumbotron = 'Découvrez notre nouvelle gamme de stylos';
 
 <body>
 <?php
-require 'function.php';
 require 'header.php';
 ?>
 
