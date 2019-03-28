@@ -23,9 +23,9 @@
         </ul>
       </div>
     </nav>
-      <div class="jumbotron jumbotron-fluid <?php echo $category ?>">
-          <h1 class="text-center ytxtban"> <?php echo $titleJumbotron ?></h1>
-          <p class="text-center ytxt"> <?php echo $textJumbotron ?></p>
+      <div class="jumbotron jumbotron-fluid <?= $category ?>">
+          <h1 class="text-center ytxtban"> <?= $titleJumbotron ?></h1>
+          <p class="text-center ytxt"> <?= $textJumbotron ?></p>
 
               <?php
                   if (isset ($typeOfArticle)) {

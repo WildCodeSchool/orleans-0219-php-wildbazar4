@@ -15,7 +15,6 @@
                     <a class="text-center btn btn-secondary btn-lg " role="button" href="add-{$category}.php">
                         ADD NEW
                     </a>
-               </a>
             </div>
 HTML;
     }
