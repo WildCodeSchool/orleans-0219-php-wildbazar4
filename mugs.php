@@ -23,7 +23,7 @@ $linkJumbotron = 'mugs.php';
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
 
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
   <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CPermanent+Marker%7CRoboto%7CSource+Sans+Pro%7CRaleway"
         rel="stylesheet">
   <title><?= $titleJumbotron ?> Wild Bazar</title>
@@ -267,7 +267,7 @@ $linkJumbotron = 'mugs.php';
 </html>
 <?php
 /*URL POUR LES IMAGES                                            OK
- * NOTER LES FICHIERS REQUIRED OU NON                            OK CONNEC
+ * NOTER LES FICHIERS REQUIRED OU NON                            OK CONNEC et fonction
  * COMMENTER LA FONCtiON                                         Solène
  * APPELER UN MINIMUM DE CHOSES POUR CHAQUE PAGE                 OK
  * RANGER LE BORDEL DANS LE REPOSITORY                           NON
