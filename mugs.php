@@ -278,5 +278,3 @@ $linkJumbotron = 'mugs.php';
  * */ ?>
 
 
-
-
