@@ -40,7 +40,7 @@ footer{
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
-  background-image: url(images/test2.jpg)
+  background-image: url(../images/test2.jpg)
 }
 
 .pens {
@@ -48,28 +48,28 @@ footer{
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
-  background-image: url(images/bg_4.jpg)}
+  background-image: url(../images/bg_4.jpg)}
 
 .socks {
     padding: 11rem 2rem;
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 0px;
-    background-image: url(images/socks-banner.jpg)}
+    background-image: url(../images/socks-banner.jpg)}
 
 .plushies {
       padding: 11rem 2rem;
       background-size: cover;
       background-attachment: fixed;
       margin-bottom: 0px;
-      background-image: url(images/peluches.jpg)}
+      background-image: url(../images/peluches.jpg)}
 
 .mugs {
         padding: 11rem 2rem;
         background-size: cover;
         background-attachment: fixed;
         margin-bottom: 0px;
-        background-image: url(images/tasmugs2.jpg)}
+        background-image: url(../images/tasmugs2.jpg)}
 
 
 .ycat:hover{

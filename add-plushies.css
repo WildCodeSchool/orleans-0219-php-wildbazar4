@@ -169,7 +169,7 @@ p.ytxt{
 }
 
 .div-about {
-    background-image:url('../images/bg-about-us.jpg');
+    background-image:url('images/bg-about-us.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;

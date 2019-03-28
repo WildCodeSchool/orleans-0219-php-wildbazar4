@@ -9,6 +9,6 @@ require 'headcategories.php';
 
 require 'header.php';
 
-require 'modalgenerator.php';
+require 'generatorPens.php';
 
 require 'footer.php' ?>
