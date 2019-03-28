@@ -1,7 +1,7 @@
 <?php
 require 'connec.php';
 $pdo = new PDO(DSN, USER, PASS);
-require 'function.php';
+
 
 
 $category = 'mugs';

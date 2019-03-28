@@ -1,8 +1,13 @@
 <?php require 'connec.php';
 $pdo = new PDO(DSN, USER, PASS);
 $query = "SELECT * FROM mugs";
+
 $prep = $pdo->query($query);
 $mugs = $prep->fetchAll(PDO::FETCH_ASSOC);
+
+
+
+
 $typeOfArticle = 'Mugs';
 $category = 'mugs';
 $titleJumbotron = 'Mugs';
@@ -99,17 +104,17 @@ $linkJumbotron = 'mugs.php';
                       <div class="col-6">
 
                         <div class="dropdown d-inline">
-                          <button class="btn btn-confirm dropdown-toggle" type="button" data-toggle="dropdown"
+                          <select class="btn btn-confirm dropdown-toggle" label="Quantité" data-toggle="dropdown"
                                   aria-haspopup="true" aria-expanded="false">
                             Quantité
-                          </button>
-                          <div class="dropdown-menu">
 
-                            <button class="dropdown-item" type="button">1</button>
-                            <button class="dropdown-item" type="button">2</button>
-                            <button class="dropdown-item" type="button">3</button>
 
-                          </div>
+
+                            <option class="dropdown-item" >1</option>
+                            <option class="dropdown-item" >2</option>
+                            <option class="dropdown-item" >3</option>
+                          </select>
+
 
                           <div class="dropdown d-inline">
                             <button class="btn btn-confirm dropdown-toggle" type="button" data-toggle="dropdown"

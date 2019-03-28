@@ -19,7 +19,7 @@
     $category = 'index';
     $titleJumbotron = 'Wild Bazar';
     $textJumbotron = 'On y trouve de tout et surtout du<br> n\'importe quoi !';
-    include 'header.php';
+    require 'header.php';
 ?>
 
   <!-- categories -->
@@ -127,7 +127,7 @@
   <!--END CARDS-->
   <!--FOOTER-->
 
-<?php include 'footer.php' ?>
+<?php require 'footer.php' ?>
 
   <!-- Optional JavaScript -->
 
