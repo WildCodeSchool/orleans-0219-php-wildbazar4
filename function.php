@@ -9,19 +9,14 @@ function cleanArray(array $inputArray): array
     return $data ;
 }
 
-/**
- * @param $category
- * @return string
- */
     function addButton ($category)
-{
-    return <<<HTML
-        <div class="text-center p-4">
-            <a href="add-{$category}.php">
-                <button type="button" class="text-center btn btn-secondary btn-lg">
-                    ADD NEW
-                </button>
-           </a>
-        </div>
+    {
+        return <<<HTML
+            <div class="text-center p-4">
+                    <a class="text-center btn btn-secondary btn-lg " role="button" href="add-{$category}.php">
+                        ADD NEW
+                    </a>
+            </div>
 HTML;
-}
+    }
+?>

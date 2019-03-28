@@ -1,3 +1,4 @@
+<?php require 'function.php';?>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -24,16 +25,14 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid <?= $category ?> ">
-        <h1 class="text-center ytxtban"><?= $titleJumbotron?></h1>
-        <p class="text-center ytxt"><?= $textJumbotron ?></p>
+    <div class="jumbotron jumbotron-fluid <?= $category ?>">
+        <h1 class="text-center ytxtban"> <?= $titleJumbotron ?></h1>
+        <p class="text-center ytxt"> <?= $textJumbotron ?></p>
 
-        <div class="text-center p-4">
-            <a href="add-<?=$category?>.php">
-                <button type="button" class="text-center btn btn-secondary btn-lg">
-                    ADD NEW
-                </button>
-            </a>
-        </div>
+        <?php
+        if (isset ($typeOfArticle)) {
+            echo addButton($category);
+        }
+        ?>
     </div>
 </header>

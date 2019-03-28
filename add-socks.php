@@ -1,10 +1,32 @@
+<!doctype html>
+<html lang="fr">
+
 <?php
-$category = 'socks';
-$titleJumbotron = 'Chaussettes';
-$textJumbotron = 'Ajoutez vos chaussettes ici';
-require 'headcategories.php';
-require 'header.php';
-require 'function.php';
+    $category = 'socks';
+    $titleJumbotron = 'Chaussettes';
+    $textJumbotron = 'Ajoutez vos chaussettes ici';
+    require 'connec.php';
+?>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CPermanent+Marker%7CRoboto%7CSource+Sans+Pro%7CRaleway"
+          rel="stylesheet">
+    <title><?= $titleJumbotron ?> Wild Bazar </title>
+</head>
+
+<body>
+<?php require 'header.php';
+$pdo = new PDO(DSN, USER, PASS);
 
 $errors = [];
 $pairSocks = ['1 paire' => 'one', 'Lot de 2 paires' => 'two', 'Lot de 3 paires' => 'three', 'Lot de 4 paires' => 'four', 'Lot de 5 paires' => 'five'];
@@ -17,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (empty($data['name'])) {
         $errors['name'] = $emptyField;
-    } elseif ((strlen($data['name']) > $maxLengthName)) {
+    } elseif ((strlen($data['name']) > 100)) {
         $errors['name'] = 'Votre nom de produit ne peut pas être supérieur à ' . $maxLengthName . 'caractères';
     }
 
@@ -35,26 +57,26 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (empty($data['cloth'])) {
         $errors['cloth'] = $emptyField;
-    } elseif ((strlen($data['cloth']) > 255)) {
+    } elseif ((strlen($data['cloth']) > 100)) {
         $errors['cloth'] = 'Votre description ne peut pas être supérieure à ' . $maxDefault . 'caractères';
     }
 
     if (empty($data['available'])) {
         $errors['available'] = $emptyField;
-    } elseif ((strlen($data['available']) > 255)) {
+    } elseif ((strlen($data['available']) > 100)) {
         $errors['available'] = 'Votre texte ne peut pas être supérieur à ' . $maxDefault . 'caractères';
     }
 
     if (empty($data['image'])) {
         $errors['image'] = $emptyField;
-    } elseif ((strlen($data['image']) > 255)) {
+    } elseif ((strlen($data['image']) > $maxDefault)) {
         $errors['image'] = 'Le nom de votre image ne peut pas être supérieur à ' . $maxDefault . 'caractères';
     }
 
-    if (empty($data['alt'])) {
-        $errors['alt'] = $emptyField;
-    } elseif ((strlen($data['alt']) > 255)) {
-        $errors['alt'] = 'Le description de votre image ne peut pas être supérieure à ' . $maxDefault . 'caractères';
+    if (empty($data['altAttribute'])) {
+        $errors['altAttribute'] = $emptyField;
+    } elseif ((strlen($data['altAttribute']) > $maxDefault)) {
+        $errors['altAttribute'] = 'Le description de votre image ne peut pas être supérieure à ' . $maxDefault . 'caractères';
     }
 
     if (!in_array($data['pairSocks'], $pairSocks)) {
@@ -62,6 +84,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if (isset($_POST['submit']) && empty($errors)) {
+        $query = "INSERT INTO socks (name, price, description, image, cloth, available, pairSocks, altAttribute) VALUES (:name, :price, :description, :image, :cloth, :available, :pairSocks, :altAttribute)";
+        $statement = $pdo->prepare($query);
+        $statement -> bindValue(':name', $data['name'], PDO::PARAM_STR);
+        $statement -> bindValue(':price', $data['price'], PDO::PARAM_STR);
+        $statement -> bindValue(':description', $data['description'], PDO::PARAM_STR);
+        $statement -> bindValue(':image', $data['image'], PDO::PARAM_STR);
+        $statement -> bindValue(':cloth', $data['cloth'], PDO::PARAM_STR);
+        $statement -> bindValue(':available', $data['available'], PDO::PARAM_STR);
+        $statement -> bindValue(':pairSocks', $data['pairSocks'], PDO::PARAM_STR);
+        $statement -> bindValue(':altAttribute', $data['altAttribute'], PDO::PARAM_STR);
+        $statement -> execute();
         header('Location: add-socks-success.php');
     }
 }
@@ -142,10 +175,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
 
         <div class="form-group">
-          <label for="alt">Description de la photo</label>
-          <input required class="form-control" type="text" id="alt" name="alt" placeholder="Insérez la description de la photo" value="<?= $data['alt'] ?? '' ?>">
-            <?php if (!empty($errors['alt'])) : ?>
-              <div class="error text-danger"> <?= $errors['alt'] ?> </div>
+          <label for="altAttribute">Description de la photo</label>
+          <input required class="form-control" type="text" id="altAttribute" name="altAttribute" placeholder="Insérez la description de la photo" value="<?= $data['altAttribute'] ?? '' ?>">
+            <?php if (!empty($errors['altAttribute'])) : ?>
+              <div class="error text-danger"> <?= $errors['altAttribute'] ?> </div>
             <?php endif; ?>
         </div>
 
@@ -159,5 +192,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   </div>
 
 </section>
-<?php include 'footer.php' ?>
+<!-- Optional JavaScript -->
 
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<?php require 'footer.php' ?>
+</body>
+</html>
